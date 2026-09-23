@@ -1,0 +1,28 @@
+{
+  "n_pilot": 50,
+  "k": 5,
+  "receiver_k1_pass": 17,
+  "receiver_k1_acc": 0.34,
+  "receiver_pass_at_k": 27,
+  "receiver_pass_at_k_acc": 0.54,
+  "donor_k1_pass": 19,
+  "donor_k1_acc": 0.38,
+  "sampling_gain_pp": 20.0,
+  "discordant_count": 9,
+  "discordance_rate": 0.18,
+  "transfer_attempts": 9,
+  "transfer_flips": 0,
+  "transfer_flip_rate_on_discordant": 0.0,
+  "elapsed_min": 34.1,
+  "config": {
+    "donor": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "receiver": "deepseek-ai/deepseek-coder-1.3b-instruct",
+    "donor_layer": 14,
+    "receiver_layer": 12,
+    "temp": 0.2,
+    "top_p": 0.95,
+    "seed": 42,
+    "ridge_lambda": 1.0,
+    "n_train_fit": 40
+  }
+}

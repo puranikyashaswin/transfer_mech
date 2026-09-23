@@ -1,0 +1,12 @@
+run_id=gate0-20260923T114508Z
+host=ip-172-31-32-229
+instance_id=<redacted>
+date_utc=2026-09-23T11:45:08Z
+java=/usr/bin/java
+javac=/usr/bin/javac
+openjdk version "11.0.32.1" 2026-08-18 LTS
+python3=Python 3.10.12
+dataset_dir=/home/ubuntu/data/temp_hej
+dataset_buggy_count=163
+dataset_test_count=163
+script_sha256=30f7abb3b59cf03c6c6f6fd57292318063c0d906d81844775bc686dec4aebc50

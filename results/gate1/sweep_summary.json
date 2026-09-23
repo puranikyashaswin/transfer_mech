@@ -1,0 +1,21 @@
+{
+  "n_discordant": 9,
+  "configs": {
+    "d14_r12_a0.1_nm1": {
+      "n": 9,
+      "flips": 1,
+      "flip_rate": 0.1111111111111111
+    },
+    "d14_r12_a0.3_nm1": {
+      "n": 9,
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    "d14_r12_a1.0_nm1": {
+      "n": 9,
+      "flips": 2,
+      "flip_rate": 0.2222222222222222
+    }
+  },
+  "elapsed_min": 3.0
+}

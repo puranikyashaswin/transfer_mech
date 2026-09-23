@@ -1,0 +1,37 @@
+{
+  "dataset": "/home/ubuntu/data/temp_hej",
+  "checks": {
+    "known_valid": {
+      "ok": true,
+      "n": 163,
+      "n_pass": 163,
+      "failures": {}
+    },
+    "known_invalid": {
+      "ok": true,
+      "n": 163,
+      "n_unexpected_pass": 0,
+      "unexpected_passes": [],
+      "status_histogram": {
+        "test_fail": 161,
+        "timeout": 1,
+        "compile_error": 1
+      }
+    },
+    "noop_identity": {
+      "ok": true,
+      "n_rechecked": 25,
+      "mismatches": []
+    },
+    "independent_recompute": {
+      "ok": true,
+      "recompute_pass": 163,
+      "harness_pass": 163
+    }
+  },
+  "toolchain": {
+    "ok": true,
+    "version": "openjdk version \"11.0.32.1\" 2026-08-18 LTS / javac 11.0.32.1"
+  },
+  "gate0_passed": true
+}
