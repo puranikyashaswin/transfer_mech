@@ -1,0 +1,722 @@
+[
+  {
+    "bug_id": "MAXIMUM_K",
+    "arm": "transfer",
+    "cos": 0.9677,
+    "norm_ratio": 1.0499,
+    "kl_base_to_inject": 0.2573,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "MAXIMUM_K",
+    "arm": "random_norm",
+    "cos": 0.9509,
+    "norm_ratio": 1.0218,
+    "kl_base_to_inject": 0.3564,
+    "argmax_changed": true
+  },
+  {
+    "bug_id": "MAXIMUM_K",
+    "arm": "self_inject",
+    "cos": 0.9674,
+    "norm_ratio": 1.0523,
+    "kl_base_to_inject": 0.2171,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "MAX_ELEMENT",
+    "arm": "transfer",
+    "cos": 0.9471,
+    "norm_ratio": 1.0609,
+    "kl_base_to_inject": 0.2304,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "MAX_ELEMENT",
+    "arm": "random_norm",
+    "cos": 0.9461,
+    "norm_ratio": 1.0209,
+    "kl_base_to_inject": 0.1027,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "MAX_ELEMENT",
+    "arm": "self_inject",
+    "cos": 0.9473,
+    "norm_ratio": 1.0606,
+    "kl_base_to_inject": 0.2221,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "MAX_FILL",
+    "arm": "transfer",
+    "cos": 0.9633,
+    "norm_ratio": 1.0441,
+    "kl_base_to_inject": 0.1988,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "MAX_FILL",
+    "arm": "random_norm",
+    "cos": 0.9422,
+    "norm_ratio": 1.0244,
+    "kl_base_to_inject": 0.312,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "MAX_FILL",
+    "arm": "self_inject",
+    "cos": 0.9643,
+    "norm_ratio": 1.0437,
+    "kl_base_to_inject": 0.1986,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "MEAN_ABSOLUTE_DEVIATION",
+    "arm": "transfer",
+    "cos": 0.9556,
+    "norm_ratio": 1.0634,
+    "kl_base_to_inject": 0.2871,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "MEAN_ABSOLUTE_DEVIATION",
+    "arm": "random_norm",
+    "cos": 0.9418,
+    "norm_ratio": 1.031,
+    "kl_base_to_inject": 0.2113,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "MEAN_ABSOLUTE_DEVIATION",
+    "arm": "self_inject",
+    "cos": 0.9558,
+    "norm_ratio": 1.0631,
+    "kl_base_to_inject": 0.2776,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "MEDIAN",
+    "arm": "transfer",
+    "cos": 0.9715,
+    "norm_ratio": 1.047,
+    "kl_base_to_inject": 0.1282,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "MEDIAN",
+    "arm": "random_norm",
+    "cos": 0.9534,
+    "norm_ratio": 1.0244,
+    "kl_base_to_inject": 0.2797,
+    "argmax_changed": true
+  },
+  {
+    "bug_id": "MEDIAN",
+    "arm": "self_inject",
+    "cos": 0.9717,
+    "norm_ratio": 1.0474,
+    "kl_base_to_inject": 0.1127,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "MIN_PATH",
+    "arm": "transfer",
+    "cos": 0.9681,
+    "norm_ratio": 1.031,
+    "kl_base_to_inject": 0.1664,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "MIN_PATH",
+    "arm": "random_norm",
+    "cos": 0.946,
+    "norm_ratio": 1.0145,
+    "kl_base_to_inject": 0.4523,
+    "argmax_changed": true
+  },
+  {
+    "bug_id": "MIN_PATH",
+    "arm": "self_inject",
+    "cos": 0.9689,
+    "norm_ratio": 1.0289,
+    "kl_base_to_inject": 0.1645,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "MIN_SUBARRAY_SUM",
+    "arm": "transfer",
+    "cos": 0.9685,
+    "norm_ratio": 1.0404,
+    "kl_base_to_inject": 0.1859,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "MIN_SUBARRAY_SUM",
+    "arm": "random_norm",
+    "cos": 0.9449,
+    "norm_ratio": 1.0199,
+    "kl_base_to_inject": 0.4074,
+    "argmax_changed": true
+  },
+  {
+    "bug_id": "MIN_SUBARRAY_SUM",
+    "arm": "self_inject",
+    "cos": 0.9685,
+    "norm_ratio": 1.0405,
+    "kl_base_to_inject": 0.1844,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "MODP",
+    "arm": "transfer",
+    "cos": 0.9702,
+    "norm_ratio": 1.0457,
+    "kl_base_to_inject": 0.1455,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "MODP",
+    "arm": "random_norm",
+    "cos": 0.9511,
+    "norm_ratio": 1.0207,
+    "kl_base_to_inject": 0.2705,
+    "argmax_changed": true
+  },
+  {
+    "bug_id": "MODP",
+    "arm": "self_inject",
+    "cos": 0.9698,
+    "norm_ratio": 1.0443,
+    "kl_base_to_inject": 0.1523,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "MONOTONIC",
+    "arm": "transfer",
+    "cos": 0.9716,
+    "norm_ratio": 1.0462,
+    "kl_base_to_inject": 0.1852,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "MONOTONIC",
+    "arm": "random_norm",
+    "cos": 0.9439,
+    "norm_ratio": 1.0213,
+    "kl_base_to_inject": 0.677,
+    "argmax_changed": true
+  },
+  {
+    "bug_id": "MONOTONIC",
+    "arm": "self_inject",
+    "cos": 0.9714,
+    "norm_ratio": 1.045,
+    "kl_base_to_inject": 0.1858,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "MOVE_ONE_BALL",
+    "arm": "transfer",
+    "cos": 0.9683,
+    "norm_ratio": 1.0367,
+    "kl_base_to_inject": 0.231,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "MOVE_ONE_BALL",
+    "arm": "random_norm",
+    "cos": 0.9457,
+    "norm_ratio": 1.0138,
+    "kl_base_to_inject": 0.3288,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "MOVE_ONE_BALL",
+    "arm": "self_inject",
+    "cos": 0.9679,
+    "norm_ratio": 1.04,
+    "kl_base_to_inject": 0.2306,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "MULTIPLY",
+    "arm": "transfer",
+    "cos": 0.9675,
+    "norm_ratio": 1.0378,
+    "kl_base_to_inject": 0.1342,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "MULTIPLY",
+    "arm": "random_norm",
+    "cos": 0.9561,
+    "norm_ratio": 1.0162,
+    "kl_base_to_inject": 0.1943,
+    "argmax_changed": true
+  },
+  {
+    "bug_id": "MULTIPLY",
+    "arm": "self_inject",
+    "cos": 0.9677,
+    "norm_ratio": 1.0405,
+    "kl_base_to_inject": 0.1484,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "NEXT_SMALLEST",
+    "arm": "transfer",
+    "cos": 0.9676,
+    "norm_ratio": 1.0522,
+    "kl_base_to_inject": 0.2117,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "NEXT_SMALLEST",
+    "arm": "random_norm",
+    "cos": 0.9477,
+    "norm_ratio": 1.0203,
+    "kl_base_to_inject": 0.337,
+    "argmax_changed": true
+  },
+  {
+    "bug_id": "NEXT_SMALLEST",
+    "arm": "self_inject",
+    "cos": 0.9666,
+    "norm_ratio": 1.0593,
+    "kl_base_to_inject": 0.2315,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "NUMERICAL_LETTER_GRADE",
+    "arm": "transfer",
+    "cos": 0.9558,
+    "norm_ratio": 1.0579,
+    "kl_base_to_inject": 0.2331,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "NUMERICAL_LETTER_GRADE",
+    "arm": "random_norm",
+    "cos": 0.9461,
+    "norm_ratio": 1.0349,
+    "kl_base_to_inject": 0.2098,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "NUMERICAL_LETTER_GRADE",
+    "arm": "self_inject",
+    "cos": 0.955,
+    "norm_ratio": 1.0661,
+    "kl_base_to_inject": 0.2547,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "ODD_COUNT",
+    "arm": "transfer",
+    "cos": 0.9666,
+    "norm_ratio": 1.0325,
+    "kl_base_to_inject": 0.1957,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "ODD_COUNT",
+    "arm": "random_norm",
+    "cos": 0.9466,
+    "norm_ratio": 1.0072,
+    "kl_base_to_inject": 0.521,
+    "argmax_changed": true
+  },
+  {
+    "bug_id": "ODD_COUNT",
+    "arm": "self_inject",
+    "cos": 0.9656,
+    "norm_ratio": 1.029,
+    "kl_base_to_inject": 0.208,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "ORDER_BY_POINTS",
+    "arm": "transfer",
+    "cos": 0.9665,
+    "norm_ratio": 1.0469,
+    "kl_base_to_inject": 0.1923,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "ORDER_BY_POINTS",
+    "arm": "random_norm",
+    "cos": 0.9445,
+    "norm_ratio": 1.0226,
+    "kl_base_to_inject": 0.3016,
+    "argmax_changed": true
+  },
+  {
+    "bug_id": "ORDER_BY_POINTS",
+    "arm": "self_inject",
+    "cos": 0.9664,
+    "norm_ratio": 1.0447,
+    "kl_base_to_inject": 0.197,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "PAIRS_SUM_TO_ZERO",
+    "arm": "transfer",
+    "cos": 0.9704,
+    "norm_ratio": 1.0395,
+    "kl_base_to_inject": 0.0924,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "PAIRS_SUM_TO_ZERO",
+    "arm": "random_norm",
+    "cos": 0.9461,
+    "norm_ratio": 1.0235,
+    "kl_base_to_inject": 0.4637,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "PAIRS_SUM_TO_ZERO",
+    "arm": "self_inject",
+    "cos": 0.9704,
+    "norm_ratio": 1.0404,
+    "kl_base_to_inject": 0.0931,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "PARSE_MUSIC",
+    "arm": "transfer",
+    "cos": 0.961,
+    "norm_ratio": 1.0545,
+    "kl_base_to_inject": 0.2586,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "PARSE_MUSIC",
+    "arm": "random_norm",
+    "cos": 0.9379,
+    "norm_ratio": 1.0241,
+    "kl_base_to_inject": 0.3168,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "PARSE_MUSIC",
+    "arm": "self_inject",
+    "cos": 0.9604,
+    "norm_ratio": 1.0563,
+    "kl_base_to_inject": 0.2414,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "PARSE_NESTED_PARENS",
+    "arm": "transfer",
+    "cos": 0.9633,
+    "norm_ratio": 1.0553,
+    "kl_base_to_inject": 0.2761,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "PARSE_NESTED_PARENS",
+    "arm": "random_norm",
+    "cos": 0.9428,
+    "norm_ratio": 1.0299,
+    "kl_base_to_inject": 0.3438,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "PARSE_NESTED_PARENS",
+    "arm": "self_inject",
+    "cos": 0.9629,
+    "norm_ratio": 1.0599,
+    "kl_base_to_inject": 0.2504,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "PLUCK",
+    "arm": "transfer",
+    "cos": 0.9668,
+    "norm_ratio": 1.0529,
+    "kl_base_to_inject": 0.1986,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "PLUCK",
+    "arm": "random_norm",
+    "cos": 0.9403,
+    "norm_ratio": 1.0262,
+    "kl_base_to_inject": 0.401,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "PLUCK",
+    "arm": "self_inject",
+    "cos": 0.9671,
+    "norm_ratio": 1.051,
+    "kl_base_to_inject": 0.1901,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "PRIME_FIB",
+    "arm": "transfer",
+    "cos": 0.9708,
+    "norm_ratio": 1.0393,
+    "kl_base_to_inject": 0.1268,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "PRIME_FIB",
+    "arm": "random_norm",
+    "cos": 0.9493,
+    "norm_ratio": 1.0145,
+    "kl_base_to_inject": 0.2514,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "PRIME_FIB",
+    "arm": "self_inject",
+    "cos": 0.9708,
+    "norm_ratio": 1.0386,
+    "kl_base_to_inject": 0.1267,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "PRIME_LENGTH",
+    "arm": "transfer",
+    "cos": 0.9697,
+    "norm_ratio": 1.0342,
+    "kl_base_to_inject": 0.1599,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "PRIME_LENGTH",
+    "arm": "random_norm",
+    "cos": 0.9555,
+    "norm_ratio": 1.0124,
+    "kl_base_to_inject": 0.4165,
+    "argmax_changed": true
+  },
+  {
+    "bug_id": "PRIME_LENGTH",
+    "arm": "self_inject",
+    "cos": 0.9696,
+    "norm_ratio": 1.0298,
+    "kl_base_to_inject": 0.1549,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "PROD_SIGNS",
+    "arm": "transfer",
+    "cos": 0.9717,
+    "norm_ratio": 1.0365,
+    "kl_base_to_inject": 0.1441,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "PROD_SIGNS",
+    "arm": "random_norm",
+    "cos": 0.9488,
+    "norm_ratio": 1.0183,
+    "kl_base_to_inject": 0.4417,
+    "argmax_changed": true
+  },
+  {
+    "bug_id": "PROD_SIGNS",
+    "arm": "self_inject",
+    "cos": 0.9715,
+    "norm_ratio": 1.0371,
+    "kl_base_to_inject": 0.1442,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "REMOVE_DUPLICATES",
+    "arm": "transfer",
+    "cos": 0.9674,
+    "norm_ratio": 1.0458,
+    "kl_base_to_inject": 0.2164,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "REMOVE_DUPLICATES",
+    "arm": "random_norm",
+    "cos": 0.9464,
+    "norm_ratio": 1.0231,
+    "kl_base_to_inject": 0.3259,
+    "argmax_changed": true
+  },
+  {
+    "bug_id": "REMOVE_DUPLICATES",
+    "arm": "self_inject",
+    "cos": 0.9666,
+    "norm_ratio": 1.0488,
+    "kl_base_to_inject": 0.2165,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "REMOVE_VOWELS",
+    "arm": "transfer",
+    "cos": 0.9527,
+    "norm_ratio": 1.0558,
+    "kl_base_to_inject": 0.3056,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "REMOVE_VOWELS",
+    "arm": "random_norm",
+    "cos": 0.9496,
+    "norm_ratio": 1.0226,
+    "kl_base_to_inject": 0.1639,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "REMOVE_VOWELS",
+    "arm": "self_inject",
+    "cos": 0.9514,
+    "norm_ratio": 1.0607,
+    "kl_base_to_inject": 0.3258,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "RESCALE_TO_UNIT",
+    "arm": "transfer",
+    "cos": 0.9566,
+    "norm_ratio": 1.0543,
+    "kl_base_to_inject": 0.2619,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "RESCALE_TO_UNIT",
+    "arm": "random_norm",
+    "cos": 0.9457,
+    "norm_ratio": 1.0275,
+    "kl_base_to_inject": 0.2137,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "RESCALE_TO_UNIT",
+    "arm": "self_inject",
+    "cos": 0.9567,
+    "norm_ratio": 1.0551,
+    "kl_base_to_inject": 0.2805,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "REVERSE_DELETE",
+    "arm": "transfer",
+    "cos": 0.9692,
+    "norm_ratio": 1.0449,
+    "kl_base_to_inject": 0.183,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "REVERSE_DELETE",
+    "arm": "random_norm",
+    "cos": 0.9488,
+    "norm_ratio": 1.0247,
+    "kl_base_to_inject": 0.4245,
+    "argmax_changed": true
+  },
+  {
+    "bug_id": "REVERSE_DELETE",
+    "arm": "self_inject",
+    "cos": 0.9692,
+    "norm_ratio": 1.0424,
+    "kl_base_to_inject": 0.1835,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "RIGHT_ANGLE_TRIANGLE",
+    "arm": "transfer",
+    "cos": 0.9574,
+    "norm_ratio": 1.0718,
+    "kl_base_to_inject": 0.2861,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "RIGHT_ANGLE_TRIANGLE",
+    "arm": "random_norm",
+    "cos": 0.9513,
+    "norm_ratio": 1.0301,
+    "kl_base_to_inject": 0.128,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "RIGHT_ANGLE_TRIANGLE",
+    "arm": "self_inject",
+    "cos": 0.9571,
+    "norm_ratio": 1.0746,
+    "kl_base_to_inject": 0.2523,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "ROLLING_MAX",
+    "arm": "transfer",
+    "cos": 0.9491,
+    "norm_ratio": 1.0581,
+    "kl_base_to_inject": 0.2318,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "ROLLING_MAX",
+    "arm": "random_norm",
+    "cos": 0.9507,
+    "norm_ratio": 1.0199,
+    "kl_base_to_inject": 0.0848,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "ROLLING_MAX",
+    "arm": "self_inject",
+    "cos": 0.9503,
+    "norm_ratio": 1.0572,
+    "kl_base_to_inject": 0.2292,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "ROUNDED_AVG",
+    "arm": "transfer",
+    "cos": 0.9684,
+    "norm_ratio": 1.025,
+    "kl_base_to_inject": 0.1946,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "ROUNDED_AVG",
+    "arm": "random_norm",
+    "cos": 0.9442,
+    "norm_ratio": 1.0052,
+    "kl_base_to_inject": 0.7096,
+    "argmax_changed": true
+  },
+  {
+    "bug_id": "ROUNDED_AVG",
+    "arm": "self_inject",
+    "cos": 0.9683,
+    "norm_ratio": 1.0249,
+    "kl_base_to_inject": 0.1917,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "SAME_CHARS",
+    "arm": "transfer",
+    "cos": 0.9677,
+    "norm_ratio": 1.0566,
+    "kl_base_to_inject": 0.1816,
+    "argmax_changed": false
+  },
+  {
+    "bug_id": "SAME_CHARS",
+    "arm": "random_norm",
+    "cos": 0.9486,
+    "norm_ratio": 1.0284,
+    "kl_base_to_inject": 0.2086,
+    "argmax_changed": true
+  },
+  {
+    "bug_id": "SAME_CHARS",
+    "arm": "self_inject",
+    "cos": 0.968,
+    "norm_ratio": 1.0572,
+    "kl_base_to_inject": 0.1717,
+    "argmax_changed": false
+  }
+]

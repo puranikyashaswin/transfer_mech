@@ -1,0 +1,85 @@
+{
+  "n_eval": 73,
+  "alpha": 1.0,
+  "r_draws": 5,
+  "native_norm": 64.17,
+  "all_bugs": {
+    "donor_k1": {
+      "n": 73,
+      "pass": 17,
+      "acc": 0.2329
+    },
+    "receiver_k1": {
+      "n": 73,
+      "pass": 19,
+      "acc": 0.2603
+    },
+    "transfer": {
+      "n": 73,
+      "pass": 23,
+      "acc": 0.3151
+    },
+    "self_inject": {
+      "n": 73,
+      "pass": 22,
+      "acc": 0.3014
+    },
+    "unrelated_task": {
+      "n": 73,
+      "pass": 19,
+      "acc": 0.2603
+    },
+    "text_hint": {
+      "n": 73,
+      "pass": 35,
+      "acc": 0.4795
+    },
+    "random_norm": {
+      "n_draws": 5,
+      "per_draw_acc": [
+        0.2877,
+        0.2877,
+        0.3425,
+        0.2877,
+        0.3151
+      ],
+      "mean_acc": 0.3041,
+      "spread": 0.0219
+    }
+  },
+  "n_discordant": 8,
+  "discordant_restricted": {
+    "transfer": {
+      "discordant_n": 8,
+      "pass": 3,
+      "acc": 0.375
+    },
+    "self_inject": {
+      "discordant_n": 8,
+      "pass": 2,
+      "acc": 0.25
+    },
+    "unrelated_task": {
+      "discordant_n": 8,
+      "pass": 2,
+      "acc": 0.25
+    },
+    "text_hint": {
+      "discordant_n": 8,
+      "pass": 5,
+      "acc": 0.625
+    },
+    "random_norm": {
+      "discordant_n": 8,
+      "per_draw_acc": [
+        0.125,
+        0.125,
+        0.25,
+        0.0,
+        0.125
+      ],
+      "mean_acc": 0.125
+    }
+  },
+  "elapsed_min": 147.1
+}

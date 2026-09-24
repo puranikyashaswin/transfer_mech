@@ -1,0 +1,46 @@
+{
+  "n_eval": 73,
+  "alpha": 1.0,
+  "donor_layer": 14,
+  "receiver_layer": 17,
+  "native_norm": 64.17,
+  "arms": {
+    "receiver_k1": {
+      "n": 73,
+      "pass": 19,
+      "acc": 0.2602739726027397
+    },
+    "transfer": {
+      "n": 73,
+      "pass": 23,
+      "acc": 0.3150684931506849
+    },
+    "random_norm": {
+      "n": 73,
+      "pass": 23,
+      "acc": 0.3150684931506849
+    },
+    "self_inject": {
+      "n": 73,
+      "pass": 22,
+      "acc": 0.3013698630136986
+    }
+  },
+  "flips": [
+    "PARSE_NESTED_PARENS",
+    "REMOVE_DUPLICATES",
+    "SIMPLIFY",
+    "SOLVE_STRING",
+    "SORT_ARRAY",
+    "STRING_SEQUENCE",
+    "STRONGEST_EXTENSION"
+  ],
+  "n_flips": 7,
+  "broke": [
+    "ODD_COUNT",
+    "SORT_EVEN",
+    "X_OR_Y"
+  ],
+  "n_broke": 3,
+  "elapsed_min": 56.2
+}

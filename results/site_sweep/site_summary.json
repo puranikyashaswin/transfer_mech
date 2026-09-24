@@ -1,0 +1,57 @@
+{
+  "n_eval": 73,
+  "cells": [
+    "s1_t1",
+    "s1_tall",
+    "sall_t1",
+    "sall_tall"
+  ],
+  "results": {
+    "baseline/receiver_k1": {
+      "n": 73,
+      "pass": 19,
+      "acc": 0.2603
+    },
+    "s1_t1/random": {
+      "n": 73,
+      "pass": 22,
+      "acc": 0.3014
+    },
+    "s1_t1/transfer": {
+      "n": 73,
+      "pass": 23,
+      "acc": 0.3151
+    },
+    "s1_tall/random": {
+      "n": 73,
+      "pass": 8,
+      "acc": 0.1096
+    },
+    "s1_tall/transfer": {
+      "n": 73,
+      "pass": 0,
+      "acc": 0.0
+    },
+    "sall_t1/random": {
+      "n": 73,
+      "pass": 13,
+      "acc": 0.1781
+    },
+    "sall_t1/transfer": {
+      "n": 73,
+      "pass": 24,
+      "acc": 0.3288
+    },
+    "sall_tall/random": {
+      "n": 73,
+      "pass": 0,
+      "acc": 0.0
+    },
+    "sall_tall/transfer": {
+      "n": 73,
+      "pass": 0,
+      "acc": 0.0
+    }
+  },
+  "elapsed_min": 126.2
+}
