@@ -1,0 +1,126 @@
+{
+ "arm": "random_norm",
+ "n": 23,
+ "counts": {
+  "incompatible_types": 13,
+  "unresolved_symbol": 9,
+  "unbalanced_extra_close": 1
+ },
+ "detail": [
+  {
+   "bug_id": "MBPP_170_sum_range_list",
+   "bucket": "incompatible_types",
+   "first_error": "/tmp/tmpusrkt56n/MBPP_170_sum_range_list.java:20: error: incompatible types: possible lossy conversion from long to int"
+  },
+  {
+   "bug_id": "MBPP_252_convert",
+   "bucket": "unresolved_symbol",
+   "first_error": "/tmp/tmpcnabg1bm/MBPP_252_convert.java:32: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_252_convert",
+   "bucket": "unresolved_symbol",
+   "first_error": "/tmp/tmpsy4nju1d/MBPP_252_convert.java:32: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_266_lateralsurface_cube",
+   "bucket": "unresolved_symbol",
+   "first_error": "/tmp/tmpcktk02or/TEST_MBPP_266_lateralsurface_cube.java:7: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_57_find_max_num",
+   "bucket": "incompatible_types",
+   "first_error": "/tmp/tmp195a11gt/MBPP_57_find_max_num.java:26: error: incompatible types: invalid method reference"
+  },
+  {
+   "bug_id": "MBPP_588_big_diff",
+   "bucket": "incompatible_types",
+   "first_error": "/tmp/tmp665n6zxc/TEST_MBPP_588_big_diff.java:9: error: incompatible types: ArrayList<Long> cannot be converted to ArrayList<Integer>"
+  },
+  {
+   "bug_id": "MBPP_598_armstrong_number",
+   "bucket": "unresolved_symbol",
+   "first_error": "/tmp/tmp5a3_43ix/TEST_MBPP_598_armstrong_number.java:15: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_598_armstrong_number",
+   "bucket": "unresolved_symbol",
+   "first_error": "/tmp/tmp1u8gmp1z/TEST_MBPP_598_armstrong_number.java:15: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_605_prime_num",
+   "bucket": "unresolved_symbol",
+   "first_error": "/tmp/tmpoa7ctdlu/TEST_MBPP_605_prime_num.java:15: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_721_maxaverageofpath",
+   "bucket": "unbalanced_extra_close",
+   "first_error": "/tmp/tmp0d70cp89/MBPP_721_maxaverageofpath.java:1: error: class, interface, or enum expected"
+  },
+  {
+   "bug_id": "MBPP_733_find_first_occurrence",
+   "bucket": "incompatible_types",
+   "first_error": "/tmp/tmp3sja1y67/TEST_MBPP_733_find_first_occurrence.java:15: error: incompatible types: ArrayList<Long> cannot be converted to ArrayList<Integer>"
+  },
+  {
+   "bug_id": "MBPP_753_min_k",
+   "bucket": "unresolved_symbol",
+   "first_error": "/tmp/tmpd3umb6z3/MBPP_753_min_k.java:16: error: invalid method reference"
+  },
+  {
+   "bug_id": "MBPP_753_min_k",
+   "bucket": "unresolved_symbol",
+   "first_error": "/tmp/tmpkg04ve_f/MBPP_753_min_k.java:16: error: invalid method reference"
+  },
+  {
+   "bug_id": "MBPP_753_min_k",
+   "bucket": "unresolved_symbol",
+   "first_error": "/tmp/tmp4mn362bs/MBPP_753_min_k.java:16: error: invalid method reference"
+  },
+  {
+   "bug_id": "MBPP_786_right_insertion",
+   "bucket": "incompatible_types",
+   "first_error": "/tmp/tmp9x_ugjln/TEST_MBPP_786_right_insertion.java:15: error: incompatible types: ArrayList<Long> cannot be converted to ArrayList<Integer>"
+  },
+  {
+   "bug_id": "MBPP_786_right_insertion",
+   "bucket": "incompatible_types",
+   "first_error": "/tmp/tmpartyg1c3/TEST_MBPP_786_right_insertion.java:15: error: incompatible types: ArrayList<Long> cannot be converted to ArrayList<Integer>"
+  },
+  {
+   "bug_id": "MBPP_86_centered_hexagonal_number",
+   "bucket": "incompatible_types",
+   "first_error": "/tmp/tmp1_jeoejf/MBPP_86_centered_hexagonal_number.java:14: error: method centeredHexagonalNumber(long) is already defined in class MBPP_86_centered_hexagonal_number"
+  },
+  {
+   "bug_id": "MBPP_93_power",
+   "bucket": "incompatible_types",
+   "first_error": "/tmp/tmpdzw63u1o/TEST_MBPP_93_power.java:15: error: incompatible types: possible lossy conversion from long to int"
+  },
+  {
+   "bug_id": "MBPP_94_index_minimum",
+   "bucket": "incompatible_types",
+   "first_error": "/tmp/tmp3okqz8y0/MBPP_94_index_minimum.java:25: error: incompatible types: Long cannot be converted to String"
+  },
+  {
+   "bug_id": "MBPP_94_index_minimum",
+   "bucket": "incompatible_types",
+   "first_error": "/tmp/tmpxth3jsvv/MBPP_94_index_minimum.java:25: error: incompatible types: Long cannot be converted to String"
+  },
+  {
+   "bug_id": "MBPP_94_index_minimum",
+   "bucket": "incompatible_types",
+   "first_error": "/tmp/tmpg3tuzycu/MBPP_94_index_minimum.java:25: error: incompatible types: Long cannot be converted to String"
+  },
+  {
+   "bug_id": "MBPP_94_index_minimum",
+   "bucket": "incompatible_types",
+   "first_error": "/tmp/tmp0_se89ur/MBPP_94_index_minimum.java:25: error: incompatible types: Long cannot be converted to String"
+  },
+  {
+   "bug_id": "MBPP_94_index_minimum",
+   "bucket": "incompatible_types",
+   "first_error": "/tmp/tmp00csifro/MBPP_94_index_minimum.java:25: error: incompatible types: Long cannot be converted to String"
+  }
+ ]
+}

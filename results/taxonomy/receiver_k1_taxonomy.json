@@ -1,0 +1,35 @@
+{
+ "arm": "receiver_k1",
+ "n": 5,
+ "counts": {
+  "incompatible_types": 3,
+  "unresolved_symbol": 2
+ },
+ "detail": [
+  {
+   "bug_id": "MBPP_170_sum_range_list",
+   "bucket": "incompatible_types",
+   "first_error": "/tmp/tmp9vedzmlq/MBPP_170_sum_range_list.java:20: error: incompatible types: possible lossy conversion from long to int"
+  },
+  {
+   "bug_id": "MBPP_252_convert",
+   "bucket": "unresolved_symbol",
+   "first_error": "/tmp/tmph7chfgea/MBPP_252_convert.java:32: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_474_replace_char",
+   "bucket": "incompatible_types",
+   "first_error": "/tmp/tmp0pj8f9jn/TEST_MBPP_474_replace_char.java:15: error: incompatible types: String cannot be converted to char"
+  },
+  {
+   "bug_id": "MBPP_598_armstrong_number",
+   "bucket": "unresolved_symbol",
+   "first_error": "/tmp/tmp4kvkz8hl/TEST_MBPP_598_armstrong_number.java:15: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_66_pos_count",
+   "bucket": "incompatible_types",
+   "first_error": "/tmp/tmp7_bemglh/MBPP_66_pos_count.java:9: error: incompatible types: possible lossy conversion from long to int"
+  }
+ ]
+}

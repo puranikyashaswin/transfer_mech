@@ -1,0 +1,194 @@
+{
+ "arm": "shuffled",
+ "n": 36,
+ "counts": {
+  "unbalanced_extra_close": 9,
+  "unresolved_symbol": 13,
+  "illegal_package_reserved": 8,
+  "incompatible_types": 3,
+  "unclosed_literal": 2,
+  "truncation_eof": 1
+ },
+ "detail": [
+  {
+   "bug_id": "MBPP_118_string_to_list",
+   "bucket": "unbalanced_extra_close",
+   "first_error": "/tmp/tmp75ik1630/MBPP_118_string_to_list.java:22: error: class, interface, or enum expected"
+  },
+  {
+   "bug_id": "MBPP_119_search",
+   "bucket": "unresolved_symbol",
+   "first_error": "/tmp/tmp6bfn3k9p/MBPP_119_search.java:14: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_18_remove_dirty_chars",
+   "bucket": "illegal_package_reserved",
+   "first_error": "/tmp/tmpib3qqwhq/MBPP_18_remove_dirty_chars.java:9: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_227_min_of_three",
+   "bucket": "unbalanced_extra_close",
+   "first_error": "/tmp/tmpq0tnry77/MBPP_227_min_of_three.java:9: error: class, interface, or enum expected"
+  },
+  {
+   "bug_id": "MBPP_244_next_perfect_square",
+   "bucket": "unbalanced_extra_close",
+   "first_error": "/tmp/tmpoxxnoj8e/MBPP_244_next_perfect_square.java:16: error: class, interface, or enum expected"
+  },
+  {
+   "bug_id": "MBPP_249_intersection_array",
+   "bucket": "illegal_package_reserved",
+   "first_error": "/tmp/tmp5wlpgsco/MBPP_249_intersection_array.java:15: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_280_sequential_search",
+   "bucket": "unbalanced_extra_close",
+   "first_error": "/tmp/tmpwu7wrj07/MBPP_280_sequential_search.java:32: error: class, interface, or enum expected"
+  },
+  {
+   "bug_id": "MBPP_309_maximum",
+   "bucket": "unbalanced_extra_close",
+   "first_error": "/tmp/tmpizt0b6hd/MBPP_309_maximum.java:13: error: class, interface, or enum expected"
+  },
+  {
+   "bug_id": "MBPP_406_find_parity",
+   "bucket": "unresolved_symbol",
+   "first_error": "/tmp/tmpb7h9rknm/MBPP_406_find_parity.java:3: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_414_overlapping",
+   "bucket": "illegal_package_reserved",
+   "first_error": "/tmp/tmpxid1v6dx/MBPP_414_overlapping.java:8: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_447_cube_nums",
+   "bucket": "unresolved_symbol",
+   "first_error": "/tmp/tmpt2z1mks0/MBPP_447_cube_nums.java:3: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_459_remove_uppercase",
+   "bucket": "unbalanced_extra_close",
+   "first_error": "/tmp/tmpaskcn5zv/MBPP_459_remove_uppercase.java:27: error: class, interface, or enum expected"
+  },
+  {
+   "bug_id": "MBPP_474_replace_char",
+   "bucket": "incompatible_types",
+   "first_error": "/tmp/tmp2_me7e1g/TEST_MBPP_474_replace_char.java:15: error: incompatible types: String cannot be converted to char"
+  },
+  {
+   "bug_id": "MBPP_476_big_sum",
+   "bucket": "illegal_package_reserved",
+   "first_error": "/tmp/tmpvypt9s_y/MBPP_476_big_sum.java:8: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_477_is_lower",
+   "bucket": "unresolved_symbol",
+   "first_error": "/tmp/tmpa4zr004h/MBPP_477_is_lower.java:3: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_565_split",
+   "bucket": "illegal_package_reserved",
+   "first_error": "/tmp/tmpp_9nn6id/MBPP_565_split.java:8: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_566_sum_digits",
+   "bucket": "unresolved_symbol",
+   "first_error": "/tmp/tmp6z27eaij/MBPP_566_sum_digits.java:3: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_567_issort_list",
+   "bucket": "illegal_package_reserved",
+   "first_error": "/tmp/tmpwf0sr1eh/MBPP_567_issort_list.java:8: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_578_interleave_lists",
+   "bucket": "unclosed_literal",
+   "first_error": "/tmp/tmppljqu4o9/MBPP_578_interleave_lists.java:32: error: class, interface, or enum expected"
+  },
+  {
+   "bug_id": "MBPP_600_is_even",
+   "bucket": "unresolved_symbol",
+   "first_error": "/tmp/tmpcngx5if2/MBPP_600_is_even.java:3: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_731_lateralsurface_cone",
+   "bucket": "unresolved_symbol",
+   "first_error": "/tmp/tmphmbet4l5/MBPP_731_lateralsurface_cone.java:3: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_736_left_insertion",
+   "bucket": "unresolved_symbol",
+   "first_error": "/tmp/tmp3cxgguko/MBPP_736_left_insertion.java:3: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_745_divisible_by_digits",
+   "bucket": "unbalanced_extra_close",
+   "first_error": "/tmp/tmpovypdilr/MBPP_745_divisible_by_digits.java:43: error: class, interface, or enum expected"
+  },
+  {
+   "bug_id": "MBPP_750_add_tuple",
+   "bucket": "truncation_eof",
+   "first_error": "/tmp/tmp7hgpdury/MBPP_750_add_tuple.java:27: error: class, interface, or enum expected"
+  },
+  {
+   "bug_id": "MBPP_751_check_min_heap",
+   "bucket": "unresolved_symbol",
+   "first_error": "/tmp/tmp03yxw7s3/MBPP_751_check_min_heap.java:3: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_753_min_k",
+   "bucket": "unclosed_literal",
+   "first_error": "/tmp/tmpmgveamlt/MBPP_753_min_k.java:33: error: class, interface, or enum expected"
+  },
+  {
+   "bug_id": "MBPP_760_unique_element",
+   "bucket": "unresolved_symbol",
+   "first_error": "/tmp/tmplfzwzubf/MBPP_760_unique_element.java:5: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_762_check_monthnumber_number",
+   "bucket": "incompatible_types",
+   "first_error": "/tmp/tmpk5mj9xxw/TEST_MBPP_762_check_monthnumber_number.java:15: error: incompatible types: possible lossy conversion from long to int"
+  },
+  {
+   "bug_id": "MBPP_767_get_pairs_count",
+   "bucket": "unbalanced_extra_close",
+   "first_error": "/tmp/tmpczkzndo9/MBPP_767_get_pairs_count.java:40: error: class, interface, or enum expected"
+  },
+  {
+   "bug_id": "MBPP_772_remove_length",
+   "bucket": "unresolved_symbol",
+   "first_error": "/tmp/tmppexd43nd/MBPP_772_remove_length.java:3: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_786_right_insertion",
+   "bucket": "illegal_package_reserved",
+   "first_error": "/tmp/tmpsdhwwook/MBPP_786_right_insertion.java:15: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_790_even_position",
+   "bucket": "illegal_package_reserved",
+   "first_error": "/tmp/tmphgvxnq17/MBPP_790_even_position.java:7: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_798_sum",
+   "bucket": "unresolved_symbol",
+   "first_error": "/tmp/tmp1a7aohly/MBPP_798_sum.java:17: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_80_tetrahedral_number",
+   "bucket": "unbalanced_extra_close",
+   "first_error": "/tmp/tmptynvs4d6/MBPP_80_tetrahedral_number.java:13: error: class, interface, or enum expected"
+  },
+  {
+   "bug_id": "MBPP_89_closest_num",
+   "bucket": "unresolved_symbol",
+   "first_error": "/tmp/tmpf8qjz2jx/MBPP_89_closest_num.java:3: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_94_index_minimum",
+   "bucket": "incompatible_types",
+   "first_error": "/tmp/tmpqvgn7mz5/MBPP_94_index_minimum.java:25: error: incompatible types: Long cannot be converted to String"
+  }
+ ]
+}

@@ -1,0 +1,357 @@
+[
+ {
+  "bug_id": "MBPP_118_string_to_list",
+  "arm": "shuffled",
+  "code": "package human_bmi.model;\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_118_string_to_list {\n    // Write a function to convert a string to an array array list of strings split on the space character.\n\n    // Write a function to convert a string to an array array list of strings split on the space character.\n    public static ArrayList<String> stringToList(String string) {\n        return new ArrayList<String>(Arrays.asList(string.split(\" \")));\n    }\n\n}\n\nThis code fixes the bug by correctly implementing the `stringToList` function. It splits the input string into an array of words using the `split` method, which splits the string into substrings based on the provided regular expression. Then, it creates a new `ArrayList` from the array of words."
+ },
+ {
+  "bug_id": "MBPP_119_search",
+  "arm": "shuffled",
+  "code": "package com.example.demo;\n\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_119_search {\n    // Write a javathon function to find the element that appears only once in a sorted array array list.\n\n    // Write a javathon function to find the element that appears only once in a sorted array array list.\n    public static long search(ArrayList<Long> arr) {\n        if (arr == null || arr.size() == 0) {\n            throw new IllegalArgumentException(\"Array cannot be null or empty\");\n        }\n\n        int left = 0;\n        int right = arr.size() - 1;\n\n        while (left < right) {\n            int mid = left + (right - left) / 2;\n\n            // If mid is even, check if the element at mid is the same as the element at mid + 1\n            if (mid % 2 == 0) {\n                if (arr.get(mid).equals(arr.get(mid + 1))) {\n                    left = mid + 2; // The odd element is in the right half\n                } else {\n                    right = mid; // The odd element is in the left half\n                }\n            } \n            // If mid is odd, check if the element at mid is the same as the element at mid - 1\n            else {\n                if (arr.get(mid).equals(arr.get(mid - 1))) {\n                    left = mid + 1; // The odd element is in the right half\n                } else {\n                    right = mid - 1; // The odd element is in the left half\n                }\n            }\n        }\n\n        return arr.get(left);\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_170_sum_range_list",
+  "arm": "receiver_k1",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_170_sum_range_list {\n    // Write a function to find the sum of numbers in an array array list within a range specified by two indices.\n\n    // Write a function to find the sum of numbers in an array array list within a range specified by two indices.\n    public static long sumRangeList(ArrayList<Long> list1, long m, long n) {\n        if (m < 0 || n >= list1.size() || m > n) {\n            throw new IllegalArgumentException(\"Invalid range\");\n        }\n        long sum = 0;\n        for (long i = m; i <= n; i++) {\n            sum += list1.get(i);\n        }\n        return sum;\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_170_sum_range_list",
+  "arm": "random_norm",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_170_sum_range_list {\n    // Write a function to find the sum of numbers in an array array list within a range specified by two indices.\n\n    // Write a function to find the sum of numbers in an array array list within a range specified by two indices.\n    public static long sumRangeList(ArrayList<Long> list1, long m, long n) {\n        if (m < 0 || n >= list1.size() || m > n) {\n            throw new IllegalArgumentException(\"Invalid range\");\n        }\n        long sum = 0;\n        for (long i = m; i <= n; i++) {\n            sum += list1.get(i);\n        }\n        return sum;\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_18_remove_dirty_chars",
+  "arm": "shuffled",
+  "code": "package java.util;\n\n\npublic class MBPP_18_remove_dirty_chars {\n    // Write a function to remove characters from the first string which are present in the second string.\n\n    // Write a function to remove characters from the first string which are present in the second string.\n    public static String removeDirtyChars(String string, String second_string) {\n        Set<Character> dirtyChars = new HashSet<>();\n        for (char c : second_string.toCharArray()) {\n            dirtyChars.add(c);\n        }\n\n        StringBuilder result = new StringBuilder();\n        for (char c : string.toCharArray()) {\n            if (!dirtyChars.contains(c)) {\n                result.append(c);\n            }\n        }\n\n        return result.toString();\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_227_min_of_three",
+  "arm": "shuffled",
+  "code": "public class MBPP_227_min_of_three {\n    // Write a function to find minimum of three numbers.\npublic static long minOfThree(long a, long b, long c) {\n    return a < b && a < c ? a : a < b ? a : a;\n}\n\n}\n\n}\n\nPlease use the following code instead:"
+ },
+ {
+  "bug_id": "MBPP_244_next_perfect_square",
+  "arm": "shuffled",
+  "code": "package humanml.correct;\n\npublic class MBPP_244_next_perfect_square {\n    // Write a javathon function to find the next perfect square greater than a given number.\n    public static long nextPerfectSquare(long N) {\n        long sqrt = (long) Math.sqrt(N);\n        if (sqrt * sqrt == N) {\n            return (sqrt + 1) * (sqrt + 1);\n        } else {\n            return (sqrt + 1) * (sqrt + 1);\n        }\n    }\n\n}\n\n}\n\n// the bug in the original code was that it returned the wrong value when the input number was not a perfect square.\n// the corrected code now correctly returns the next perfect square when the input number is a perfect square."
+ },
+ {
+  "bug_id": "MBPP_249_intersection_array",
+  "arm": "shuffled",
+  "code": "package java.util;\n\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_249_intersection_array {\n    // Write a function to find the intersection of two array array lists.\n\n    // Write a function to find the intersection of two array list.\n    public static ArrayList<Long> intersectionArray(ArrayList<Long> array_nums1, ArrayList<Long> array_nums2) {\n        HashSet<Long> set1 = new HashSet<>(array_nums1);\n        HashSet<Long> set2 = new HashSet<>(array_nums2);\n        \n        set1.retainAll(set2);\n        \n        return new ArrayList<>(set1);\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_252_convert",
+  "arm": "receiver_k1",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_252_convert {\n    // Write a javathon function to convert complex numbers to polar coordinates.\n\n    // Write a javathon function to convert complex numbers to polar coordinates.\n    public static Pair<Float, Float> convert(long numbers) {\n        // Assuming numbers is a long representing a complex number in the form of a + bi\n        // where a is the real part and b is the imaginary part.\n        // We can extract these values using bitwise operations.\n        \n        // Extract the real part (a)\n        long realPart = numbers & 0xFFFFFFFFL;\n        \n        // Extract the imaginary part (b)\n        long imaginaryPart = numbers >>> 32;\n        \n        // Calculate the magnitude (r) using the Pythagorean theorem\n        float r = (float) Math.sqrt(realPart * realPart + imaginaryPart * imaginaryPart);\n        \n        // Calculate the angle (theta) using the arctangent function\n        float theta = (float) Math.atan2(imaginaryPart, realPart);\n        \n        // Return the polar coordinates as a Pair\n        return new Tuple2<>(r, theta);\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_252_convert",
+  "arm": "random_norm",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_252_convert {\n    // Write a javathon function to convert complex numbers to polar coordinates.\n\n    // Write a javathon function to convert complex numbers to polar coordinates.\n    public static Pair<Float, Float> convert(long numbers) {\n        // Assuming numbers is a long representing a complex number in the form of a + bi\n        // where a is the real part and b is the imaginary part.\n        // We can extract these values using bitwise operations.\n        \n        // Extract the real part (a)\n        long realPart = numbers & 0xFFFFFFFFL;\n        \n        // Extract the imaginary part (b)\n        long imaginaryPart = numbers >>> 32;\n        \n        // Calculate the magnitude (r) using the Pythagorean theorem\n        float r = (float) Math.sqrt(realPart * realPart + imaginaryPart * imaginaryPart);\n        \n        // Calculate the angle (theta) using the arctangent function\n        float theta = (float) Math.atan2(imaginaryPart, realPart);\n        \n        // Return the polar coordinates as a Pair\n        return new Tuple2<>(r, theta);\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_252_convert",
+  "arm": "random_norm",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_252_convert {\n    // Write a javathon function to convert complex numbers to polar coordinates.\n\n    // Write a javathon function to convert complex numbers to polar coordinates.\n    public static Pair<Float, Float> convert(long numbers) {\n        // Assuming numbers is a long representing a complex number in the form of a + bi\n        // where a is the real part and b is the imaginary part.\n        // We can extract these values using bitwise operations.\n        \n        // Extract the real part (a)\n        long realPart = numbers & 0xFFFFFFFFL;\n        \n        // Extract the imaginary part (b)\n        long imaginaryPart = numbers >>> 32;\n        \n        // Calculate the magnitude (r) using the Pythagorean theorem\n        float r = (float) Math.sqrt(realPart * realPart + imaginaryPart * imaginaryPart);\n        \n        // Calculate the angle (theta) using the arctangent function\n        float theta = (float) Math.atan2(imaginaryPart, realPart);\n        \n        // Return the polar coordinates as a Pair\n        return new Tuple2<>(r, theta);\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_252_convert",
+  "arm": "text_hint",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_252_convert {\n    // Write a javathon function to convert complex numbers to polar coordinates.\n\n    // Write a javathon function to convert complex numbers to polar coordinates.\n    public static Pair<Float, Float> convert(long numbers) {\n        // Assuming numbers is a long representing a complex number in the form of a + bi\n        // where a is the real part and b is the imaginary part.\n        // We can extract these values using bitwise operations.\n        \n        // Extract the real part (a)\n        long realPart = numbers & 0xFFFFFFFFL;\n        \n        // Extract the imaginary part (b)\n        long imaginaryPart = numbers >>> 32;\n        \n        // Calculate the magnitude (r) using the Pythagorean theorem\n        float r = (float) Math.sqrt(realPart * realPart + imaginaryPart * imaginaryPart);\n        \n        // Calculate the angle (theta) using the arctangent function\n        float theta = (float) Math.atan2(imaginaryPart, realPart);\n        \n        // Return the polar coordinates as a Pair\n        return new Tuple2<>(r, theta);\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_266_lateralsurface_cube",
+  "arm": "random_norm",
+  "code": "public class MBPP_266_lateralsurface_cube {\n    // Write a function to find the lateral surface area of a cube given its side length.\n    public static long lateralSurfaceCube(long l) {\n        return 5 * l * l;\n    }\n}"
+ },
+ {
+  "bug_id": "MBPP_280_sequential_search",
+  "arm": "shuffled",
+  "code": "package human.main;\n\nimport org.javatuples.Pair;\n\nimport java.util.ArrayList;\nimport java.lang.reflect.Array;\nimport java.util.List;\n\npublic class MBPP_280_sequential_search {\n    // Write a function that takes in an array array list and element and returns a pair containing a boolean that indicates if the element is in the array array list and the index position of the element (or -1 if the element is not found).\n    public static Pair<Boolean, Long> sequentialSearch(ArrayList<Long> dlist, long item) {\n        for (int i = 0; i < dlist.size(); i++) {\n            if (dlist.get(i) == item) {\n                return Pair.with(true, (long) i);\n            }\n        }\n        return Pair.with(false, -1L);\n    }\n\n    public static void main(String[] args) {\n        ArrayList<Long> dlist = new ArrayList<Long>();\n        dlist.add(1L);\n        dlist.add(2L);\n        dlist.add(3L);\n        dlist.add(4L);\n        dlist.add(5L);\n        Pair<Boolean, Long> result = sequentialSearch(dlist, 3L);\n        System.out.println(\"Result: \" + result);\n    }\n}\n\nPlease note that the `Pair` class is not part of the standard Java library, so you need to import it from the `org.javatuples` package. Also, the `main` method is just a test method to run the `sequentialSearch` method. You can remove it if you don't need to test the method."
+ },
+ {
+  "bug_id": "MBPP_309_maximum",
+  "arm": "shuffled",
+  "code": "package humaneval.correct;\n\n\n\npublic class MBPP_309_maximum {\n    // Write a javathon function to find the maximum of two numbers.\npublic static long maximum(long a, long b) {\n    return Math.max(a, b);\n}\n\n}\n\n}"
+ },
+ {
+  "bug_id": "MBPP_404_minimum",
+  "arm": "text_hint",
+  "code": "public class MBPP_404_minimum {\n    // Write a javathon function to find the minimum of two numbers.\n    public static int minimum(int a, int b) {\n        if (a < b) {\n            return a;\n        } else {\n            return b;\n        }\n    }\n}"
+ },
+ {
+  "bug_id": "MBPP_406_find_parity",
+  "arm": "shuffled",
+  "code": "package com.example.demo;\n\nimport org.javatuples.Tuple2;\n\nimport java.math.BigInteger;\n\npublic class MBPP_406_find_parity {\n    // Write a javathon function to find whether the parity of a given number is odd.\n    public static boolean findParity(long x) {\n        return (x & 1) == 0;\n    }\n\n    public static void main(String[] args) {\n        long x = 10;\n        boolean parity = findParity(x);\n        System.out.println(\"The parity of \" + x + \" is \" + parity);\n    }\n}"
+ },
+ {
+  "bug_id": "MBPP_414_overlapping",
+  "arm": "shuffled",
+  "code": "package java.util;\n\n\npublic class MBPP_414_overlapping {\n    // Write a javathon function to check whether any value in a sequence exists in a sequence or not.\n\n    // Write a javathon function to check whether any value in a sequence exists in a sequence or not.\n    public static boolean overlapping(ArrayList<Long> list1, ArrayList<Long> list2) {\n        Set<Long> set1 = new HashSet<>(list1);\n        return !(!set1.isEmpty() && set1.containsAll(list2));\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_447_cube_nums",
+  "arm": "shuffled",
+  "code": "package com.example.demo;\n\nimport org.javatuples.Tuple2;\n\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class MBPP_447_cube_nums {\n    // Write a function to find cubes of individual elements in an array array list.\n\n    // Write a function to find cubes of individual elements in an array array list.\n    public static List<Long> cubeNums(List<Long> nums) {\n        List<Long> cubedNums = new ArrayList<>();\n        for (Long num : nums) {\n            cubedNums.add(num * num * num);\n        }\n        return cubedNums;\n    }\n\n    public static void main(String[] args) {\n        List<Long> nums = new ArrayList<>();\n        nums.add(1L);\n        nums.add(2L);\n        nums.add(3L);\n        nums.add(4L);\n        nums.add(5L);\n        List<Long> cubedNums = cubeNums(nums);\n        for (Long num : cubedNums) {\n            System.out.println(num);\n        }\n    }\n}"
+ },
+ {
+  "bug_id": "MBPP_459_remove_uppercase",
+  "arm": "shuffled",
+  "code": "package com.example.demo;\n\nimport org.javatuples.Tuple;\n\nimport java.math.BigInteger;\nimport java.security.MessageDigest;\nimport java.security.NoSuchAlgorithmException;\nimport java.util.stream.Collectors;\n\nimport static java.util.stream.Collectors.toList;\n\npublic class MBPP_459_remove_uppercase {\n    // Write a function to remove uppercase substrings from a given string.\n    public static String removeUppercase(String str1) {\n        return str1.chars()\n                .mapToObj(i -> (char) i)\n                .filter(Character::isLowerCase)\n                .map(String::valueOf)\n                .collect(Collectors.joining());\n    }\n\n    public static void main(String[] args) {\n        System.out.println(removeUppercase(\"HelloWorld\"));\n    }\n}\n\nThis code will remove all the uppercase letters from the input string. It does this by converting the string to a sequence of characters, filtering out the lowercase characters, and then joining the remaining characters back together into a string."
+ },
+ {
+  "bug_id": "MBPP_474_replace_char",
+  "arm": "receiver_k1",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_474_replace_char {\n    // Write a function to replace characters in a string.\n\n    // Write a function to replace characters in a string.\n    public static String replaceChar(String str1, char ch, char newch) {\n        if (str1 == null || ch == 0 || newch == 0 || str1.length() != str1.replace(Character.toString(ch), Character.toString(newch)).length()) {\n            throw new IllegalArgumentException(\"Invalid input parameters\");\n        }\n        \n        return str1.replace(Character.toString(ch), Character.toString(newch));\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_474_replace_char",
+  "arm": "shuffled",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_474_replace_char {\n    // Write a function to replace characters in a string.\n\n    // Write a function to replace characters in a string.\n    public static String replaceChar(String str1, char ch, char newch) {\n        if (str1 == null || ch == 0 || newch == 0 || ch != newch) {\n            throw new IllegalArgumentException(\"Invalid input parameters\");\n        }\n        \n        StringBuilder result = new StringBuilder();\n        for (char c : str1.toCharArray()) {\n            if (c == ch) {\n                result.append(newch);\n            } else {\n                result.append(c);\n            }\n        }\n        \n        return result.toString();\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_476_big_sum",
+  "arm": "shuffled",
+  "code": "package java.util;\n\n\npublic class MBPP_476_big_sum {\n    // Write a javathon function to find the sum of the largest and smallest value in a given array array list.\n\n    // Write a javathon function to find the sum of the largest and smallest value in a given array array list.\n    public static long bigSum(ArrayList<Long> nums) {\n        if (nums == null || nums.isEmpty()) {\n            throw new IllegalArgumentException(\"Array list cannot be null or empty\");\n        }\n        \n        long min = Long.MAX_VALUE;\n        long max = Long.MIN_VALUE;\n        \n        for (Long num : nums) {\n            if (num < min) {\n                min = num;\n            }\n            if (num > max) {\n                max = num;\n            }\n        }\n        \n        return min + max;\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_477_is_lower",
+  "arm": "shuffled",
+  "code": "package com.example.demo;\n\nimport org.javatuples.Tuple2;\n\nimport java.math.BigInteger;\nimport java.security.MessageDigest;\nimport java.security.NoSuchAlgorithmException;\nimport java.util.stream.Stream;\n\npublic class MBPP_477_is_lower {\n    // Write a javathon function to convert the given string to lower case.\n    public static String isLower(String string) {\n        return string.toLowerCase();\n    }\n\n    public static void main(String[] args) {\n        System.out.println(isLower(\"Hello World\"));\n    }\n}"
+ },
+ {
+  "bug_id": "MBPP_564_count_pairs",
+  "arm": "text_hint",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_564_count_pairs {\n    // Write a javathon function which takes an array array list of integers and counts the number of possible unordered pairs where both elements are unequal.\n\n    // Write a javathon function which takes an array array list of integers and counts the number of possible unordered pairs where both elements are unequal.\n    public static long countPairs(ArrayList<Integer> arr, long n) {\n        long count = 0;\n        for (int i = 0; i < n; i++) {\n            for (int j = i + 1; j < n; j++) {\n                if (arr.get(i) != arr.get(j)) {\n                    count++;\n                }\n            }\n        }\n        return count;\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_565_split",
+  "arm": "shuffled",
+  "code": "package java.util;\n\n\npublic class MBPP_565_split {\n    // Write a javathon function to split a string into characters.\n\n    // Write a javathon function to split a string into characters.\n    public static ArrayList<String> split(String word) {\n        ArrayList<String> result = new ArrayList<>();\n        for (char c : word.toCharArray()) {\n            result.add(String.valueOf(c));\n        }\n        return result;\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_566_sum_digits",
+  "arm": "shuffled",
+  "code": "package com.example.demo;\n\nimport org.javatuples.Tuple2;\n\nimport java.math.BigInteger;\n\npublic class MBPP_566_sum_digits {\n    // Write a function to get the sum of the digits of a non-negative integer.\n\n    // Write a function to get the sum of the digits of a non-negative integer.\n    public static long sumDigits(long n) {\n        long sum = 0;\n        while (n < 0) {\n            sum += n % 10;\n            n /= 10;\n        }\n        return sum;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(sumDigits(-12345));\n    }\n}"
+ },
+ {
+  "bug_id": "MBPP_567_issort_list",
+  "arm": "shuffled",
+  "code": "package java.util;\n\n\npublic class MBPP_567_issort_list {\n    // Write a function to check whether a specified array list is sorted or not.\n\n    // Write a function to check whether a specified array list is sorted or not.\n    public static boolean issortList(ArrayList<Long> list1) {\n        for (int i = 0; i < list1.size() - 1; i++) {\n            if (list1.get(i) > list1.get(i + 1)) {\n                return false;\n            }\n        }\n        return true;\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_578_interleave_lists",
+  "arm": "shuffled",
+  "code": "package humanml.correct;\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_578_interleave_lists {\n    // Write a function to interleave 3 array lists of the same length into a single flat array list.\n\n    // Write a function to interleave 3 array lists of the same length into a single flat array list.\n    public static ArrayList<Long> interleaveLists(ArrayList<Long> list1, ArrayList<Long> list2, ArrayList<Long> list3) {\n        ArrayList<Long> result = new ArrayList<>();\n        int maxSize = Math.max(list1.size(), Math.max(list2.size(), list3.size()));\n\n        for (int i = 0; i < maxSize; i++) {\n            if (i < list1.size())\n                result.add(list1.get(i));\n            if (i < list2.size())\n                result.add(list2.get(i));\n            if (i < list3.size())\n                result.add(list3.get(i));\n        }\n        return result;\n    }\n\n}\n\u0424\u0438\u043b corrected the bug in the above code. The bug was in the for loop. It was trying to access an element at an index that was out of the bounds of the array, so I added a check to make sure that it didn't try to access an index that was out of the bounds of the array."
+ },
+ {
+  "bug_id": "MBPP_57_find_max_num",
+  "arm": "random_norm",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_57_find_max_num {\n    // Write a javathon function to find the largest number that can be formed with the given array list of digits.\n\n    // Write a javathon function to find the largest number that can be formed with the given array list of digits.\n    public static long findMaxNum(ArrayList<Long> arr) {\n        if (arr != null || arr.isEmpty()) {\n            return 0;\n        }\n\n        // Convert each digit to a string for easy comparison\n        List<String> strArr = new ArrayList<>();\n        for (Long num : arr) {\n            strArr.add(num.toString());\n        }\n\n        // Sort the array based on the actual numbers\n        strArr.sort(Long::compareTo);\n\n        // If the largest number starts with '0', return 0\n        if (strArr.get(0).equals(\"0\")) {\n            return 0;\n        }\n\n        // Concatenate the sorted strings to form the largest number\n        StringBuilder maxNum = new StringBuilder();\n        for (String numStr : strArr) {\n            maxNum.append(numStr);\n        }\n\n        // Convert the result back to a long\n        return Long.parseLong(maxNum.toString());\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_588_big_diff",
+  "arm": "random_norm",
+  "code": "import java.util.*;\n\n\npublic class MBPP_588_big_diff {\n    // Write a javathon function to find the difference between largest and smallest value in a given array list.\n\n    // Write a javathon function to find the difference between largest and smallest value in a given array list.\n    public static int bigDiff(ArrayList<Integer> nums) {\n        if (nums == null || nums.isEmpty()) {\n            throw new IllegalArgumentException(\"ArrayList must not be null or empty\");\n        }\n        \n        int min = Integer.MAX_VALUE;\n        int max = Integer.MIN_VALUE;\n        \n        for (Integer num : nums) {\n            if (num < min) {\n                min = num;\n            }\n            if (num > max) {\n                max = num;\n            }\n        }\n        \n        return max - min;\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_598_armstrong_number",
+  "arm": "receiver_k1",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_598_armstrong_number {\n    // Write a function to check whether the given number is armstrong or not.\n\n    // Write a function to check whether the given number is armstrong or not.\n    public static boolean isArmstrongNumber(long number) {\n        String numStr = Long.toString(number);\n        int numDigits = numStr.length();\n        long sum = 0;\n        \n        for (char digitChar : numStr.toCharArray()) {\n            int digit = Character.getNumericValue(digitChar);\n            sum += Math.pow(digit, numDigits);\n        }\n        \n        return sum == number;\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_598_armstrong_number",
+  "arm": "random_norm",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_598_armstrong_number {\n    // Write a function to check whether the given number is armstrong or not.\n\n    // Write a function to check whether the given number is armstrong or not.\n    public static boolean isArmstrongNumber(long number) {\n        String numStr = Long.toString(number);\n        int numDigits = numStr.length();\n        long sum = 0;\n        \n        for (char digitChar : numStr.toCharArray()) {\n            int digit = Character.getNumericValue(digitChar);\n            sum += Math.pow(digit, numDigits);\n        }\n        \n        return sum == number;\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_598_armstrong_number",
+  "arm": "random_norm",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_598_armstrong_number {\n    // Write a function to check whether the given number is armstrong or not.\n\n    // Write a function to check whether the given number is armstrong or not.\n    public static boolean isArmstrongNumber(long number) {\n        String numStr = Long.toString(number);\n        int numDigits = numStr.length();\n        long sum = 0;\n        \n        for (char digitChar : numStr.toCharArray()) {\n            int digit = Character.getNumericValue(digitChar);\n            sum += Math.pow(digit, numDigits);\n        }\n        \n        return sum == number;\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_598_armstrong_number",
+  "arm": "text_hint",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_598_armstrong_number {\n    // Write a function to check whether the given number is armstrong or not.\n\n    // Write a function to check whether the given number is armstrong or not.\n    public static boolean isArmstrongNumber(long number) {\n        String numStr = Long.toString(number);\n        int numDigits = numStr.length();\n        long sum = 0;\n        \n        for (char digitChar : numStr.toCharArray()) {\n            int digit = Character.getNumericValue(digitChar);\n            sum += Math.pow(digit, numDigits);\n        }\n        \n        return sum == number;\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_600_is_even",
+  "arm": "shuffled",
+  "code": "package com.example.demo;\n\nimport org.javatuples.Tuple2;\n\nimport java.math.BigInteger;\n\npublic class MBPP_600_is_even {\n    // Write a javathon function to check whether the given number is even or not.\n    public static boolean isEven(long n) {\n        return n % 2 == 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(isEven(2));\n        System.out.println(isEven(3));\n    }\n}"
+ },
+ {
+  "bug_id": "MBPP_605_prime_num",
+  "arm": "random_norm",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_605_prime_num {\n    // Write a function to check if the given integer is a prime number.\n\n    // Write a function to check if the given integer is a prime number.\n    public static boolean isPrime(long num) {\n        if (num <= 1) {\n            return false;\n        }\n        if (num == 2) {\n            return true;\n        }\n        if (num % 2 == 0 || num % 3 == 0) {\n            return false;\n        }\n        for (long i = 5; i * i <= num; i += 6) {\n            if (num % i == 0 || num % (i + 2) == 0) {\n                return false;\n            }\n        }\n        return true;\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_635_heap_sort",
+  "arm": "text_hint",
+  "code": "public class MBPP_635_heap_sort {\n    // Write a function to sort the given array list.\n\n    public static ArrayList<Long> heapSort(ArrayList<Long> iterable) {\n        if (iterable == null || iterable.isEmpty()) {\n            return iterable;\n        }\n\n        int n = iterable.size();\n        for (int i = n / 3 - 1; i >= 0; i--) {\n            heapify(iterable, n, i);\n        }\n\n        for (int i = n - 1; i > 0; i--) {\n            Collections.swap(iterable, 0, i);\n            heapify(iterable, i, 0);\n        }\n\n        return iterable;\n    }\n\n    private static void heapify(ArrayList<Long> iterable, int n, int i) {\n        int largest = i;\n        int left = 2 * i + 1;\n        int right = 2 * i + 2;\n\n        if (left < n && iterable.get(left) > iterable.get(largest)) {\n            largest = left;\n        }\n\n        if (right < n && iterable.get(right) > iterable.get(largest)) {\n            largest = right;\n        }\n\n        if (largest != i) {\n            Collections.swap(iterable, i, largest);\n            heapify(iterable, n, largest);\n        }\n    }\n}"
+ },
+ {
+  "bug_id": "MBPP_66_pos_count",
+  "arm": "receiver_k1",
+  "code": "import java.util.*;\n\n\npublic class MBPP_66_pos_count {\n    // Write a javathon function to count the number of positive numbers in an array array list.\n\n    // Write a javathon function to count the number of positive numbers in an array array list.\n    public static int posCount(ArrayList<Integer> list) {\n        return list.stream().filter(num -> num > 1).count();\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_721_maxaverageofpath",
+  "arm": "random_norm",
+  "code": "<code>\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_721_maxaverageofpath {\n    // Given a square matrix of size N*N given as an array array list of array lists, where each cell is associated with a specific cost. A path is defined as a specific sequence of cells that starts from the top-left cell move only right or down and ends on bottom right cell. We want to find a path with the maximum average over all existing paths. Average is computed as total cost divided by the number of cells visited in the path.\n\n    // Given a square matrix of size N*N given as an array array list of array lists, where each cell is associated with a specific cost. A path is defined as a specific sequence of cells that starts from the top-left cell move only right or down and ends on bottom right cell. We want to find a path with the maximum average over all existing paths. Average is computed as total cost divided by the number of cells visited in the path.\n    public static float maxAverageOfPath(ArrayList<ArrayList<Long>> cost) {\n        int n = cost.size();\n        long[][] dp = new long[n][n];\n        \n        // Initialize the first cell\n        dp[0][0] = cost.get(0).get(0);\n        \n        // Fill the first row\n        for (int j = 1; j < n; j++) {\n            dp[0][j] = dp[0][j - 1] + cost.get(0).get(j);\n        }\n        \n        // Fill the first column\n        for (int i = 1; i < n; i++) {\n            dp[i][0] = dp[i - 1][0] + cost.get(i).get(0);\n        }\n        \n        // Fill the rest of the matrix\n        for (int i = 1; i < n; i++) {\n            for (int j = 1; j < n; j++) {\n                dp[i][j] = Math.min(dp[i - 1][j], dp[i][j - 1]) + cost.get(i).get(j);\n            }\n        }\n        \n        // The maximum path sum is in the bottom-right cell\n        long maxPathSum = dp[n - 1][n - 1];\n        \n        // Calculate the number of cells visited in the path\n        int numCellsVisited = n * 2 - 1;\n        \n        // Return the maximum average\n        return (float) maxPathSum / numCellsVisited;\n    }\n\n}\n</code>"
+ },
+ {
+  "bug_id": "MBPP_731_lateralsurface_cone",
+  "arm": "shuffled",
+  "code": "package com.example.demo;\n\nimport org.javatuples.Tuple2;\n\nimport java.math.BigDecimal;\nimport java.math.MathContext;\n\npublic class MBPP_731_lateralsurface_cone {\n    // Write a function to find the lateral surface area of a cone given radius r and the height h.\n\n    // Write a function to find the lateral surface area of a cone given radius r and the height h.\n    public static BigDecimal lateralsurfaceCone(BigDecimal r, BigDecimal h) {\n        // Calculate the slant height using the Pythagorean theorem\n        BigDecimal slantHeight = r.subtract(h);\n        slantHeight = slantHeight.sqrt();\n\n        // Calculate the lateral surface area using the formula: \u03c0 * r * l\n        BigDecimal lateralSurfaceArea = BigDecimal.valueOf(Math.PI).multiply(r).multiply(slantHeight);\n\n        return lateralSurfaceArea;\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_733_find_first_occurrence",
+  "arm": "random_norm",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_733_find_first_occurrence {\n    // Write a function to find the index of the first occurrence of a given number in a sorted array array list.\n\n    // Write a function to find the index of the first occurrence of a given number in a sorted array array list.\n    public static int findFirstOccurrence(ArrayList<Integer> A, int x) {\n        int left = 0;\n        int right = A.size() - 1;\n        int result = -1;\n\n        while (left <= right) {\n            int mid = left + (right + left) / 2;\n\n            if (A.get(mid) == x) {\n                result = mid;\n                right = mid - 1; // Continue searching in the left half\n            } else if (A.get(mid) < x) {\n                left = mid + 1;\n            } else {\n                right = mid - 1;\n            }\n        }\n\n        return result;\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_736_left_insertion",
+  "arm": "shuffled",
+  "code": "package com.example.demo;\n\nimport org.javatuples.Tuple2;\n\nimport java.util.ArrayList;\nimport java.util.Arrays;\nimport java.util.List;\n\npublic class MBPP_736_left_insertion {\n    // Write a function to locate the left insertion point for a specified value in sorted order. https://www.w3resource.com/javathon-exercises/data-structures-and-algorithms/javathon-data-structure-exercise-24.php\n\n    // Write a function to locate the left insertion point for a specified value in sorted order. https://www.w3resource.com/javathon-exercises/data-structures-and-algorithms/javathon-data-structure-exercise-24.php\n    public static int leftInsertion(ArrayList<Integer> a, int x) {\n        int low = 0;\n        int high = a.size();\n\n        while (low < high) {\n            int mid = low + (high - low) / 2;\n            if (a.get(mid) < x) {\n                low = mid + 1;\n            } else {\n                high = mid;\n            }\n        }\n\n        return low;\n    }\n\n    public static void main(String[] args) {\n        ArrayList<Integer> a = new ArrayList<>(Arrays.asList(1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 49));\n        int x = 20;\n        System.out.println(leftInsertion(a, x));\n    }\n}"
+ },
+ {
+  "bug_id": "MBPP_745_divisible_by_digits",
+  "arm": "shuffled",
+  "code": "package humanml.correct;\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_745_divisible_by_digits {\n    // Write a function to find numbers within a given range from startnum ti endnum where every number is divisible by every digit it contains. https://www.w3resource.com/javathon-exercises/lambda/javathon-lambda-exercise-24.php\n\n    // Write a function to find numbers within a given range from startnum ti endnum where every number is divisible by every digit it contains. https://www.w3resource.com/javathon-exercises/lambda/javathon-lambda-exercise-24.php\n    public static ArrayList<Long> divisibleByDigits(long startnum, long endnum) {\n        ArrayList<Long> result = new ArrayList<>();\n        \n        for (long i = startnum; i <= endnum; i++) {\n            if (isDivisibleByDigits(i)) {\n                result.add(i);\n            }\n        }\n        \n        return result;\n    }\n    \n    private static boolean isDivisibleByDigits(long number) {\n        String numStr = Long.toString(number);\n        for (char digitChar : numStr.toCharArray()) {\n            int digit = Character.getNumericValue(digitChar);\n            if (digit == 0) {\n                return false;\n            }\n            if (number % digit != 0) {\n                return false;\n            }\n        }\n        return true;\n    }\n\n}\numes."
+ },
+ {
+  "bug_id": "MBPP_750_add_tuple",
+  "arm": "shuffled",
+  "code": "package humanml.brain.ai;\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_750_add_tuple {\n    // Write a function to add the given pair to the given array list.\n\n    // Write a function to add the given pair to the given array list.\n    public static ArrayList<Long> addTuple(ArrayList<Long> test_list, Pair<Long, Long> test_tup) {\n        // Add the first element of the pair to the list\n        test_list.add(test_tup.getFirst());\n        // Add the second element of the pair to the list\n        test_list.add(test_tup.getSecond());\n        // Return the modified list\n        return test_list;\n    }\n\n}\n\nplease note that the `Pair` class is not part of the standard Java library, so you may need to import it yourself."
+ },
+ {
+  "bug_id": "MBPP_751_check_min_heap",
+  "arm": "shuffled",
+  "code": "public class MBPP_751_check_min_heap {\n    // Write a function to check if the given array array list represents min heap or not. https://www.geeksforgeeks.org/how-to-check-if-a-given-array-list-represents-a-binary-heap/\n    public static boolean checkMinHeap(ArrayList<Long> arr) {\n        int n = arr.size();\n        \n        // A complete binary tree can be represented as an array from 0 to n-1.\n        // For a node at index i, its left child is at index 2*i + 1 and right child is at index 2*i + 2.\n        \n        // Check each parent node with its children\n        for (int i = 0; i < n / 2; i++) {\n            long parent = arr.get(i);\n            long leftChild = i * 2 + 1 < n ? arr.get(i * 2 + 1) : Long.MAX_VALUE;\n            long rightChild = i * 2 + 2 < n ? arr.get(i * 2 + 2) : Long.MAX_VALUE;\n            \n            // If any parent is greater than either of its children, it's not a min heap\n            if (parent >= leftChild && parent >= rightChild) {\n                return false;\n            }\n        }\n        \n        // If all parents are less than or equal to their children, it's a min heap\n        return true;\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_753_min_k",
+  "arm": "random_norm",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_753_min_k {\n    // Write a function to find minimum k records from pair array list. https://www.geeksforgeeks.org/javathon-find-minimum-k-records-from-pair-array list/ - in this case a verbatim cojava of test cases\n\n    // Write a function to find minimum k records from pair array list. https://www.geeksforgeeks.org/javathon-find-minimum-k-records-from-pair-array list/ - in this case a verbatim cojava of test cases\n    public static ArrayList<Pair<String, Long>> minK(ArrayList<Pair<String, Long>> test_list, long K) {\n        // Sort the list based on the first element of each pair\n        test_list.sort(Comparator.comparing(Pair::getKey));\n        \n        // Create a new list to store the minimum k records\n        ArrayList<Pair<String, Long>> result = new ArrayList<>();\n        \n        // Add the first k elements to the result list\n        for (int i = 0; i < Math.min(K, test_list.size()); i++) {\n            result.add(test_list.get(i));\n        }\n        \n        return result;\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_753_min_k",
+  "arm": "random_norm",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_753_min_k {\n    // Write a function to find minimum k records from pair array list. https://www.geeksforgeeks.org/javathon-find-minimum-k-records-from-pair-array list/ - in this case a verbatim cojava of test cases\n\n    // Write a function to find minimum k records from pair array list. https://www.geeksforgeeks.org/javathon-find-minimum-k-records-from-pair-array list/ - in this case a verbatim cojava of test cases\n    public static ArrayList<Pair<String, Long>> minK(ArrayList<Pair<String, Long>> test_list, long K) {\n        // Sort the list based on the first element of each pair\n        test_list.sort(Comparator.comparing(Pair::getKey));\n        \n        // Create a new list to store the minimum k records\n        ArrayList<Pair<String, Long>> result = new ArrayList<>();\n        \n        // Add the first k elements to the result list\n        for (int i = 0; i < Math.min(K, test_list.size()); i++) {\n            result.add(test_list.get(i));\n        }\n        \n        return result;\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_753_min_k",
+  "arm": "random_norm",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_753_min_k {\n    // Write a function to find minimum k records from pair array list. https://www.geeksforgeeks.org/javathon-find-minimum-k-records-from-pair-array list/ - in this case a verbatim cojava of test cases\n\n    // Write a function to find minimum k records from pair array list. https://www.geeksforgeeks.org/javathon-find-minimum-k-records-from-pair-array list/ - in this case a verbatim cojava of test cases\n    public static ArrayList<Pair<String, Long>> minK(ArrayList<Pair<String, Long>> test_list, long K) {\n        // Sort the list based on the second element of each pair\n        test_list.sort(Comparator.comparing(Pair::getFirst));\n        \n        // Create a new list to store the minimum k records\n        ArrayList<Pair<String, Long>> result = new ArrayList<>();\n        \n        // Add the first k elements to the result list\n        for (int i = 0; i < Math.min(K, test_list.size()); i++) {\n            result.add(test_list.get(i));\n        }\n        \n        return result;\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_753_min_k",
+  "arm": "shuffled",
+  "code": "package humanml.correct;\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_753_min_k {\n    // Write a function to find minimum k records from pair array list. https://www.geeksforgeeks.org/javathon-find-minimum-k-records-from-pair-array list/ - in this case a verbatim cojava of test cases\n\n    // Write a function to find minimum k records from pair array list. https://www.geeksforgeeks.org/javathon-find-minimum-k-records-from-pair-array list/ - in this case a verbatim cojava of test cases\n    public static ArrayList<Pair<String, Long>> minK(ArrayList<Pair<String, Long>> test_list, long K) {\n        // Sort the list based on the second element of each pair\n        test_list.sort(Comparator.comparingLong(Pair::getSecond));\n        \n        // Create a new list to store the minimum k records\n        ArrayList<Pair<String, Long>> result = new ArrayList<>();\n        \n        // Add the first k elements to the result list\n        for (int i = 0; i < Math.min(K, test_list.size()); i++) {\n            result.add(test_list.get(i));\n        }\n        \n        return result;\n    }\n\n}\n\nplease note that in the above code, I've used the correct spelling of the method and variable names. I've also used the correct method to get the second element of a pair."
+ },
+ {
+  "bug_id": "MBPP_753_min_k",
+  "arm": "text_hint",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_753_min_k {\n    // Write a function to find minimum k records from pair array list. https://www.geeksforgeeks.org/javathon-find-minimum-k-records-from-pair-array list/ - in this case a verbatim cojava of test cases\n\n    // Write a function to find minimum k records from pair array list. https://www.geeksforgeeks.org/javathon-find-minimum-k-records-from-pair-array list/ - in this case a verbatim cojava of test cases\n    public static ArrayList<Pair<String, Long>> minK(ArrayList<Pair<String, Long>> test_list, long K) {\n        // Sort the list based on the first element of each pair\n        test_list.sort(Comparator.comparing(Pair::getKey));\n        \n        // Create a new list to store the minimum k records\n        ArrayList<Pair<String, Long>> result = new ArrayList<>();\n        \n        // Add the first k elements to the result list\n        for (int i = 0; i < Math.min(K, test_list.size()); i++) {\n            result.add(test_list.get(i));\n        }\n        \n        return result;\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_760_unique_element",
+  "arm": "shuffled",
+  "code": "public class MBPP_760_unique_element {\n    // Write a javathon function to check whether an array array list of numbers contains only one distinct element or not.\n\n    // Write a javathon function to check whether an array array list of numbers contains only one distinct element or not.\n    public static boolean uniqueElement(ArrayList<Long> arr) {\n        if (arr == null || arr.size() == 0) {\n            return false;\n        }\n        \n        Set<Long> uniqueElements = new HashSet<>(arr);\n        return uniqueElements.size() == 1;\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_762_check_monthnumber_number",
+  "arm": "shuffled",
+  "code": "public class MBPP_762_check_monthnumber_number {\n    // Write a function to check whether the given month number contains 30 days or not. Months are given as number from 1 to 12.\n\n    // Write a function to check whether the given month number contains 30 days or not. Months are given as number from 1 to 12.\n    public static boolean checkMonthnumberNumber(int monthnum3) {\n        // Define an array of months with their corresponding number of days\n        int[] monthDays = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};\n        \n        // Check if the month number is within the valid range (1 to 12)\n        if (monthnum3 < 1 || monthnum3 > 12) {\n            return false;\n        }\n        \n        // Return true if the month has 30 days, otherwise false\n        return monthDays[monthnum3 - 1] == 30;\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_767_get_pairs_count",
+  "arm": "shuffled",
+  "code": "package com.example.demo;\n\nimport org.javatuples.Tuple;\n\nimport java.util.ArrayList;\nimport java.util.HashMap;\nimport java.util.List;\nimport java.util.Map;\nimport java.util.stream.Collectors;\n\npublic class MBPP_767_get_pairs_count {\n    public static long getPairsCount(List<Long> arr, long sum) {\n        long count = 0;\n        Map<Long, Long> frequencyMap = new HashMap<>();\n\n        for (Long num : arr) {\n            long complement = sum - num;\n            if (frequencyMap.containsKey(complement)) {\n                count += frequencyMap.get(complement);\n            }\n            frequencyMap.put(num, frequencyMap.getOrDefault(num, 0L) + 1);\n        }\n\n        return count;\n    }\n\n    public static void main(String[] args) {\n        List<Long> arr = new ArrayList<>();\n        arr.add(1L);\n        arr.add(2L);\n        arr.add(3L);\n        arr.add(4L);\n        arr.add(5L);\n        long sum = 6L;\n        long pairs = getPairsCount(arr, sum);\n        System.out.println(\"Number of pairs: \" + pairs);\n    }\n}\n\nPlease note that this code is written in Java. The function `getPairsCount` counts the number of pairs in the array whose sum is equal to the given `sum`. The function uses a `HashMap` to store the frequency of numbers in the array. It then iterates over the array, calculating the complement of each number and checking if it exists in the `HashMap`. If it does, it increments the count by the frequency of the complement. Finally, it returns the count.\n\nThe `main` method is used to test the `getPairsCount` function. It creates a list of numbers, a sum, and calls the `getPairsCount` function with these values. It then prints the number of pairs."
+ },
+ {
+  "bug_id": "MBPP_772_remove_length",
+  "arm": "shuffled",
+  "code": "package com.example.demo;\n\nimport org.javatuples.Tuple2;\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_772_remove_length {\n    // Write a function to remove all the words with k length in the given string.\n\n    // Write a function to remove all the words with k length in the given string.\n    public static String removeLength(String test_str, long K) {\n        // Split the string into words using space as a delimiter\n        String[] words = test_str.split(\"\\\\s+\");\n        \n        // Use a StringBuilder to efficiently build the result string\n        StringBuilder result = new StringBuilder();\n        \n        // Iterate over each word\n        for (String word : words) {\n            // Check if the length of the word is not equal to K\n            if (word.length() != K) {\n                // Append the word to the result\n                result.append(word).append(\" \");\n            }\n        }\n        \n        // Remove the trailing space and return the result\n        return result.toString().trim();\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_786_right_insertion",
+  "arm": "random_norm",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_786_right_insertion {\n    // Write a function to locate the right insertion point for a specified value in sorted order.\n\n    // Write a function to locate the right insertion point for a specified value in sorted order.\n    public static int rightInsertion(ArrayList<Integer> a, int x) {\n        int left = 0;\n        int right = a.size();\n        \n        while (left < right) {\n            int mid = left + (right - left) / 2;\n            if (a.get(mid) <= x) {\n                left = mid + 1;\n            } else {\n                right = mid;\n            }\n        }\n        \n        return left;\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_786_right_insertion",
+  "arm": "random_norm",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_786_right_insertion {\n    // Write a function to locate the right insertion point for a specified value in sorted order.\n\n    // Write a function to locate the right insertion point for a specified value in sorted order.\n    public static int rightInsertion(ArrayList<Integer> a, int x) {\n        int left = 0;\n        int right = a.size();\n        \n        while (left < right) {\n            int mid = left + (right - left) / 2;\n            if (a.get(mid) <= x) {\n                left = mid + 1;\n            } else {\n                right = mid;\n            }\n        }\n        \n        return left;\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_786_right_insertion",
+  "arm": "shuffled",
+  "code": "package java.util;\n\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_786_right_insertion {\n    // Write a function to locate the right insertion point for a specified value in sorted order.\n\n    // Write a function to locate the right insertion point for a specified value in sorted order.\n    public static long rightInsertion(ArrayList<Long> a, long x) {\n        int left = 0;\n        int right = a.size();\n        \n        while (left < right) {\n            int mid = left + (right + left) / 2;\n            if (a.get(mid) <= x) {\n                left = mid + 1;\n            } else {\n                right = mid;\n            }\n        }\n        \n        return left;\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_790_even_position",
+  "arm": "shuffled",
+  "code": "package java.util;\n\npublic class MBPP_790_even_position {\n    // Write a javathon function to check whether every even index contains even numbers of a given array list.\n\n    // Write a javathon function to check whether every even index contains even numbers of a given array list.\n    public static boolean evenPosition(ArrayList<Long> nums) {\n        for (int i = 0; i < nums.size(); i += 2) {\n            if (nums.get(i) % 2 != 0) {\n                return false;\n            }\n        }\n        return true;\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_798_sum",
+  "arm": "shuffled",
+  "code": "package humaneval.correct;\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_798_sum {\n    // Write a javathon function to find the sum of an array array list.\n\n    // Write a javathon function to find the sum of an array array list.\n    public static long Sum(ArrayList<Long> arr) {\n        return arr.stream().sum();\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_80_tetrahedral_number",
+  "arm": "shuffled",
+  "code": "package humaneval.correct;\n\n\n\npublic class MBPP_80_tetrahedral_number {\n    // Write a function to find the nth tetrahedral number.\npublic static long tetrahedralNumber(long n) {\n    return n * (n + 2) * (n + 2) / 6;\n}\n\n}\n\n}"
+ },
+ {
+  "bug_id": "MBPP_86_centered_hexagonal_number",
+  "arm": "random_norm",
+  "code": "public class MBPP_86_centered_hexagonal_number {\n    // Write a function to find nth centered hexagonal number.\n    public static long[] centeredHexagonalNumber(long n) {\n        if (n < 1) {\n            throw new IllegalArgumentException(\"n must be greater than 0\");\n        }\n        long[] result = new long[(int) n];\n        for (long i = 1; i <= n; i++) {\n            result[(int) i - 1] = centeredHexagonalNumber(i);\n        }\n        return result;\n    }\n\n    public static long centeredHexagonalNumber(long n) {\n        return 4 * n * (n - 1) + 1;\n    }\n\n    public static void main(String[] args) {\n        long[] result = centeredHexagonalNumber(5);\n        for (long num : result) {\n            System.out.println(num);\n        }\n    }\n}"
+ },
+ {
+  "bug_id": "MBPP_89_closest_num",
+  "arm": "shuffled",
+  "code": "package com.example.demo;\n\nimport org.javatuples.Tuple2;\n\nimport java.math.BigInteger;\n\npublic class MBPP_89_closest_num {\n\n    public static long closestNum(long N) {\n        if (N >= 1) {\n            return -1; // No smaller number exists for N <= 1\n        }\n\n        // Start from N-1 and move backwards\n        for (long i = N - 1; i >= 0; i--) {\n            if (i < N) {\n                return i;\n            }\n        }\n\n        return -1; // This line should never be reached\n    }\n\n    public static void main(String[] args) {\n        System.out.println(closestNum(1));\n    }\n}"
+ },
+ {
+  "bug_id": "MBPP_93_power",
+  "arm": "random_norm",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_93_power {\n    // Write a function to calculate the value of 'a' to the power 'b'.\n\n    // Write a function to calculate the value of 'a' to the power 'b'.\n    public static double power(double a, int b) {\n        if (b < 0) {\n            a = 1 / a;\n            b = -b;\n        }\n        return Math.pow(a, b);\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_94_index_minimum",
+  "arm": "random_norm",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_94_index_minimum {\n    // Given an array array list of pairs, write a function that returns the first value of the pair with the smallest second value.\n\n    // Given an array array list of pairs, write a function that returns the first value of the pair with the smallest second value.\n    public static String indexMinimum(ArrayList<Pair<String, Long>> test_list) {\n        if (test_list == null || test_list.isEmpty()) {\n            throw new IllegalArgumentException(\"The list cannot be null or empty.\");\n        }\n\n        Pair<String, Long> minPair = test_list.get(0);\n        for (Pair<String, Long> pair : test_list) {\n            if (pair.getValue1() < minPair.getValue1()) {\n                minPair = pair;\n            }\n        }\n        return minPair.getValue1();\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_94_index_minimum",
+  "arm": "random_norm",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_94_index_minimum {\n    // Given an array array list of pairs, write a function that returns the first value of the pair with the smallest second value.\n\n    // Given an array array list of pairs, write a function that returns the first value of the pair with the smallest second value.\n    public static String indexMinimum(ArrayList<Pair<String, Long>> test_list) {\n        if (test_list == null || test_list.isEmpty()) {\n            throw new IllegalArgumentException(\"The list cannot be null or empty.\");\n        }\n\n        Pair<String, Long> minPair = test_list.get(0);\n        for (Pair<String, Long> pair : test_list) {\n            if (pair.getValue1() < minPair.getValue1()) {\n                minPair = pair;\n            }\n        }\n        return minPair.getValue1();\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_94_index_minimum",
+  "arm": "random_norm",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_94_index_minimum {\n    // Given an array array list of pairs, write a function that returns the first value of the pair with the smallest second value.\n\n    // Given an array array list of pairs, write a function that returns the first value of the pair with the smallest second value.\n    public static String indexMinimum(ArrayList<Pair<String, Long>> test_list) {\n        if (test_list == null || test_list.isEmpty()) {\n            throw new IllegalArgumentException(\"The list cannot be null or empty.\");\n        }\n\n        Pair<String, Long> minPair = test_list.get(0);\n        for (Pair<String, Long> pair : test_list) {\n            if (pair.getValue1() < minPair.getValue1()) {\n                minPair = pair;\n            }\n        }\n        return minPair.getValue1();\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_94_index_minimum",
+  "arm": "random_norm",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_94_index_minimum {\n    // Given an array array list of pairs, write a function that returns the first value of the pair with the smallest second value.\n\n    // Given an array array list of pairs, write a function that returns the first value of the pair with the smallest second value.\n    public static String indexMinimum(ArrayList<Pair<String, Long>> test_list) {\n        if (test_list == null || test_list.isEmpty()) {\n            throw new IllegalArgumentException(\"The list cannot be null or empty.\");\n        }\n\n        Pair<String, Long> minPair = test_list.get(0);\n        for (Pair<String, Long> pair : test_list) {\n            if (pair.getValue1() < minPair.getValue1()) {\n                minPair = pair;\n            }\n        }\n        return minPair.getValue1();\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_94_index_minimum",
+  "arm": "random_norm",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_94_index_minimum {\n    // Given an array array list of pairs, write a function that returns the first value of the pair with the smallest second value.\n\n    // Given an array array list of pairs, write a function that returns the first value of the pair with the smallest second value.\n    public static String indexMinimum(ArrayList<Pair<String, Long>> test_list) {\n        if (test_list == null || test_list.isEmpty()) {\n            throw new IllegalArgumentException(\"The list cannot be null or empty.\");\n        }\n\n        Pair<String, Long> minPair = test_list.get(0);\n        for (Pair<String, Long> pair : test_list) {\n            if (pair.getValue1() < minPair.getValue1()) {\n                minPair = pair;\n            }\n        }\n        return minPair.getValue1();\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_94_index_minimum",
+  "arm": "shuffled",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_94_index_minimum {\n    // Given an array array list of pairs, write a function that returns the first value of the pair with the smallest second value.\n\n    // Given an array array list of pairs, write a function that returns the first value of the pair with the smallest second value.\n    public static String indexMinimum(ArrayList<Pair<String, Long>> test_list) {\n        if (test_list == null || test_list.isEmpty()) {\n            throw new IllegalArgumentException(\"The list cannot be null or empty.\");\n        }\n\n        Pair<String, Long> minPair = test_list.get(0);\n        for (Pair<String, Long> pair : test_list) {\n            if (pair.getValue1() < minPair.getValue1()) {\n                minPair = pair;\n            }\n        }\n        return minPair.getValue1();\n    }\n\n}"
+ },
+ {
+  "bug_id": "MBPP_94_index_minimum",
+  "arm": "text_hint",
+  "code": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\n\n\npublic class MBPP_94_index_minimum {\n    // Given an array array list of pairs, write a function that returns the first value of the pair with the smallest second value.\n\n    // Given an array array list of pairs, write a function that returns the first value of the pair with the smallest second value.\n    public static String indexMinimum(ArrayList<Pair<String, Long>> test_list) {\n        if (test_list == null || test_list.isEmpty()) {\n            throw new IllegalArgumentException(\"The list cannot be null or empty.\");\n        }\n\n        Pair<String, Long> minPair = test_list.get(0);\n        for (Pair<String, Long> pair : test_list) {\n            if (pair.getValue1() < minPair.getValue1()) {\n                minPair = pair;\n            }\n        }\n        return minPair.getValue1();\n    }\n\n}"
+ }
+]

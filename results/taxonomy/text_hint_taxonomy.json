@@ -1,0 +1,45 @@
+{
+ "arm": "text_hint",
+ "n": 7,
+ "counts": {
+  "unresolved_symbol": 4,
+  "incompatible_types": 3
+ },
+ "detail": [
+  {
+   "bug_id": "MBPP_252_convert",
+   "bucket": "unresolved_symbol",
+   "first_error": "/tmp/tmpep7jj8id/MBPP_252_convert.java:32: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_404_minimum",
+   "bucket": "incompatible_types",
+   "first_error": "/tmp/tmpgm9oqnf9/TEST_MBPP_404_minimum.java:7: error: incompatible types: possible lossy conversion from long to int"
+  },
+  {
+   "bug_id": "MBPP_564_count_pairs",
+   "bucket": "incompatible_types",
+   "first_error": "/tmp/tmpu1hjjysh/TEST_MBPP_564_count_pairs.java:15: error: incompatible types: ArrayList<Long> cannot be converted to ArrayList<Integer>"
+  },
+  {
+   "bug_id": "MBPP_598_armstrong_number",
+   "bucket": "unresolved_symbol",
+   "first_error": "/tmp/tmpudqzfqk0/TEST_MBPP_598_armstrong_number.java:15: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_635_heap_sort",
+   "bucket": "unresolved_symbol",
+   "first_error": "/tmp/tmp7zq5gkof/MBPP_635_heap_sort.java:4: error: cannot find symbol"
+  },
+  {
+   "bug_id": "MBPP_753_min_k",
+   "bucket": "unresolved_symbol",
+   "first_error": "/tmp/tmpcr72y2uz/MBPP_753_min_k.java:16: error: invalid method reference"
+  },
+  {
+   "bug_id": "MBPP_94_index_minimum",
+   "bucket": "incompatible_types",
+   "first_error": "/tmp/tmp2b3s8kwc/MBPP_94_index_minimum.java:25: error: incompatible types: Long cannot be converted to String"
+  }
+ ]
+}

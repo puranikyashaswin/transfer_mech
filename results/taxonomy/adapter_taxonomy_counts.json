@@ -1,0 +1,66 @@
+{
+ "counts": {
+  "other_syntactic": 25,
+  "prose_leakage_after_code": 2,
+  "unbalanced_extra_close_brace": 18,
+  "truncated_incomplete_stmt": 3
+ },
+ "examples": {
+  "other_syntactic": [
+   "MBPP_118_string_to_list",
+   "MBPP_19_test_duplicate",
+   "MBPP_252_convert",
+   "MBPP_257_swap_numbers",
+   "MBPP_394_check_distinct",
+   "MBPP_397_median_numbers",
+   "MBPP_414_overlapping",
+   "MBPP_474_replace_char",
+   "MBPP_567_issort_list",
+   "MBPP_591_swap_list",
+   "MBPP_598_armstrong_number",
+   "MBPP_600_is_even",
+   "MBPP_624_is_upper",
+   "MBPP_625_swap_list",
+   "MBPP_629_split",
+   "MBPP_62_smallest_num",
+   "MBPP_632_move_zero",
+   "MBPP_753_min_k",
+   "MBPP_760_unique_element",
+   "MBPP_762_check_monthnumber_number",
+   "MBPP_763_find_min_diff",
+   "MBPP_775_odd_position",
+   "MBPP_790_even_position",
+   "MBPP_805_max_sum_list",
+   "MBPP_807_first_odd"
+  ],
+  "prose_leakage_after_code": [
+   "MBPP_119_search",
+   "MBPP_129_magic_square_test"
+  ],
+  "unbalanced_extra_close_brace": [
+   "MBPP_127_multiply_int",
+   "MBPP_135_hexagonal_num",
+   "MBPP_171_perimeter_pentagon",
+   "MBPP_224_count_set_bits",
+   "MBPP_227_min_of_three",
+   "MBPP_234_volume_cube",
+   "MBPP_244_next_perfect_square",
+   "MBPP_266_lateralsurface_cube",
+   "MBPP_388_highest_power_of_2",
+   "MBPP_404_minimum",
+   "MBPP_435_last_digit",
+   "MBPP_441_surfacearea_cube",
+   "MBPP_458_rectangle_area",
+   "MBPP_59_is_octagonal",
+   "MBPP_799_left_rotate",
+   "MBPP_801_test_three_equal",
+   "MBPP_80_tetrahedral_number",
+   "MBPP_86_centered_hexagonal_number"
+  ],
+  "truncated_incomplete_stmt": [
+   "MBPP_255_combinations_colors",
+   "MBPP_389_find_lucas",
+   "MBPP_459_remove_uppercase"
+  ]
+ }
+}
