@@ -1,0 +1,5 @@
+# GPU runs (eval_harness/). Also needs JDK 11+ on PATH.
+-r requirements.txt
+torch>=2.2
+transformers>=4.44
+accelerate>=0.33

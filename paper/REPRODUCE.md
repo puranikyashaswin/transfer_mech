@@ -14,7 +14,7 @@ pip install transformers accelerate scipy
 # JDK 11+ on PATH; dataset needs junit4 + hamcrest + jaxb-api + activation jars in <dataset>/lib/
 ```
 
-Bugs file: `DGLC_ARCHIVE/05_code/experiments/data/humaneval_java.jsonl` (163 records).
+Bugs file: `<bugs.jsonl>`, the 163-record HumanEval-Java bug list (see README, Reproducing).
 Dataset: HumanEval-Java `temp_hej/` with `lib/` jars.
 
 ## 1. Gate 0 — validate the harness (do this first)
@@ -129,25 +129,19 @@ python3 eval_adapter.py --bugs ../data/confirmatory_hej/bugs_manifest.jsonl \
 #         random_norm recorded as 5 draws. Execution-verified (default-package JUnit).
 
 # 9d. Confirmatory statistics (Amendment 006 sec.5)
-~/.venvs/doctools/bin/python paper/make_stats_confirmatory.py
+python3 paper/make_stats_confirmatory.py
 # Reads results/confirmatory/eval_out.jsonl. Prints per-arm Wilson CIs, paired exact
 # McNemar (adapter vs receiver_k1 and vs random_norm-majority), win-share + exact
 # Clopper-Pearson CI (claim threshold 0.60), and the honest-n equivalence bound.
-
-# 9e. One-command paper integration (after the run completes)
-~/.venvs/doctools/bin/python paper/fill_confirmatory.py
-# Runs make_stats_confirmatory.py (single source of truth), requires >=215 complete bugs
-# (else refuses), and fills the [[CONFIRMATORY_RESULTS_PLACEHOLDER]] in PAPER.md (§12.4)
-# and main.tex. Per Amendment 006 §5 it always states 'no headline effect claimed'.
 ```
 
 ## 10. Statistics + figures
 
 ```bash
-~/.venvs/doctools/bin/python paper/make_stats.py     # recomputes every exploratory p-value / CI / Holm from raw JSONL
+python3 paper/make_stats.py     # recomputes every exploratory p-value / CI / Holm from raw JSONL
 python3 paper/make_tables.py                          # fast stdlib-only raw-count integrity check (no scipy)
-~/.venvs/doctools/bin/python paper/make_figures.py   # reads results/*, writes paper/figures/
-~/.venvs/doctools/bin/python paper/make_stats_confirmatory.py  # confirmatory (Amendment 006) analyses
+python3 paper/make_figures.py   # reads results/*, writes paper/figures/
+python3 paper/make_stats_confirmatory.py  # confirmatory (Amendment 006) analyses
 ```
 
 ## Controls (mechanically pinned, Amendment 001)

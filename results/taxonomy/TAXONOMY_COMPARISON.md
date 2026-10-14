@@ -1,6 +1,6 @@
 # Compile-Error Taxonomy Comparison
 
-**Generated:** 2025-09-25  
+**Generated:** 2026-09-25  
 **Method:** Recompiled every `compile_error` generation with javac 11, parsed exact diagnostics into root-cause buckets.  
 **Artifact:** `eval_harness/taxonomy_recompile.py` + `results/taxonomy/{arm}_taxonomy.json`
 

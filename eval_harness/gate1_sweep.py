@@ -2,8 +2,7 @@
 """
 gate1_sweep.py — EXPLORATORY intervention sweep for "What Transfers?" (Gate 1).
 
-Motivated by the transfer literature (see STATE_OF_TRUTH / papers/warnings +
-papers/transfer_systems). The naive ridge transfer gave 0/9 flips. The literature
+Motivated by the transfer literature (see paper/PAPER.md, Related Work). The naive ridge transfer gave 0/9 flips. The literature
 (Pythia negative result; StateBridge; MasterKey; Bangachev; Gao) says the fix is:
   1. CENTER activations (subtract per-model dataset mean) before fitting.
   2. NORM-MATCH the mapped vector to the receiver's NATIVE hidden-state norm at

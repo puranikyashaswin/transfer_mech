@@ -1,0 +1,4 @@
+# Analysis: verify_headline.py needs nothing; tests, stats and figures need these.
+pytest>=8
+scipy>=1.11
+matplotlib>=3.8
